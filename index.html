@@ -10,13 +10,85 @@
     
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
+    <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.eot">
+    <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.svg">
+    <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.ttf">
+    <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.woff">
+    <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.woff2">
+
+
+    
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+
 </head>
 
 <body>
 
-    <div>
+    <!-- How it works
+    FAQ
+    SingIN
+    TERMS -->
 
-        <div class="landing-wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="landing-wrapper">
+
+        <div class="container ">
             
             <h1 class="landing-title">Avoid International Transfer Fees</h1>
             <h2>Use your Friends to beat International Tranfer Fees</h2>
@@ -56,45 +128,188 @@
             </h3>
             <h3>Save up to:</h3>
             <h2>$500</h2>
-        </div>
 
-        <div>
+            <button type="button" class="btn btn-primary btn-lg">Sign In with Facebook</button>
+        </div>
+    </div>
+
+    <div class="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 feature-text">
+                    <h4>Featured In</h4>
+                </div>
+                <div class="col-md-2 featured-img">
+                    <img src="images/media1.png" class="ftr-img-fix" >
+                </div>
+                <div class="col-md-2 featured-img"  >
+                    <img src="images/media2.png" class="ftr-img-fix">
+                </div>
+                <div class="col-md-2 featured-img">
+                    <img src="images/media3.png">
+                </div>
+                <div class="col-md-2 featured-img">
+                    <img src="images/media4.png">
+                </div>
+                <div class="col-md-2 featured-img">
+                    <img src="images/media5.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how-works">
+        <div class="container">
             
-        </div>
+            <h1>We are Radially Changing</h1>
+            <h2>The Way People move money Around the World</h2>
+            <p>We are the first trust-based friend-yo-friend money transfer community</p>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Register</h2>
+                    <p>We believed that, with the right information, friends and colleagues can trust each other and engage in intermediary-free payments</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Register</h2>
+                    <p>We believed that, with the right information, friends and colleagues can trust each other and engage in intermediary-free payments</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Register</h2>
+                    <p>We believed that, with the right information, friends and colleagues can trust each other and engage in intermediary-free payments</p>
+                </div>                    
+            </div>
 
+        </div>
+    </div>
+
+
+        
+    <div class="your-money">
 
         
     </div>
-    
-    <section>
-    
-        <article>
-            <header>
-                <h2>Article title</h2>
-                <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-            </header>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </article>
+
+
+    <div class="why-ft">
+        <div class="container">
+            <div class=" row">
+
+                <div class="col-md-6">
+                    <h1>Simple, Fast, Friendly</h1>
+                    <h2> Why FriendlyTransfer </h2>
+
+                    <ul>
+                        <li> We believed that, with the right information, friends and colleagues can trust each other and engage in intermediary-free payments</li>
+                        <li>We believed that, with the right information, friends and colleagues can trust each other and engage in intermediary-free payments</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VxBVD8KYr74" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
         
-        <article>
-            <header>
-                <h2>Article title</h2>
-                <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-            </header>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </article>
+    </div>
+
+    <div class="reviews">
+        <div id="my_carousel" class="carousel slide">
+
+              <ol class="carousel-indicators">
+                <li data-target = "#my_carousel" data-slide-to = "0" class="active"></li>
+                <li data-target = "#my_carousel" data-slide-to = "1"></li>
+                <li data-target = "#my_carousel" data-slide-to = "2"></li>
+              </ol>
+
+              <div class="carousel-inner i">
+
+                <div class="item active">
+                  <img src="images/fotohome.jpg" alt = "i1" class="img-responsive">
+                </div>
+
+                <div class="item">
+                  <img src="images/fotohome.jpg" alt = "i2" class="img-responsive">
+                </div>
+
+                <div class="item">
+                  <img src="images/fotohome.jpg" alt = "i3" class="img-responsive">
+                </div>
+
+              </div>
+
+              <a class="carousel-control left" href="#my_carousel" data-slide = "prev">
+                <span class="icon-prev left"></span>
+              </a>
+
+              <a class="carousel-control right" href="#my_carousel" data-slide = "next">
+                <span class="icon-next right"></span>
+              </a>
+        </div>
+    </div>
+
+    <div class="save-money">
+        <div class="container">
+            <h1> $ 150.000 </h1>
+            <h3> Saved in International Transfer fees by FriendlyTransfer </h3>
+
+            <h2> Ready To Save Money and be part of our community?</h2>
+
+            <button type="button" class="btn btn-primary btn-lg">Sign In with Facebook</button>
+
+        </div>
+
+    </div>
+
+    <div class="feedback" >
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-sm-8">
+                    <p>We love your feedback. Please email us at: info@friendlytransfer.com</p>
+                </div>
+            </div>
+            
+        </div>
         
-    </section>
+    </div>
 
-    <aside>
-        <h2>About section</h2>
-        <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-    </aside>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <ul>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                        <li>Press</li>
+                        <li>Contact</li>
+                        <li>FAQS</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
-    <footer>
-        <p>Copyright 2009 Your name</p>
-    </footer>
 
+    <script language="JavaScript" type="text/javascript">
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          interval: 4000
+        })
+      });    
+    </script>
 </body>
 
 </html>
