@@ -1,6 +1,16 @@
 /*************** Global Styles *************/
 
+body {
+	font-size: 18px;
+}
 
+.in-line{
+	display: inline-block;
+}
+
+.transparent {
+	background-color: transparent;
+}
 
 /*rgb(58, 150, 205);*/
 /*247,247,247*/
@@ -14,17 +24,69 @@
 
 
 
+/* Navigation Bar */
+.logo{
+	margin-top: -15px
+}
+
+.ft-navbar{
+	height: 80px;
+	margin-bottom: 0px !important; 
+	background-color: rgba(255, 255, 255, 0.7) !important;
+	border: none !important;
+	/*background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));*/
+	border-radius: 0px !important;
+}
+
+
+
+.ft-navbar-down {
+	background-color: #fff !important;
+	/*position: fixed !important;
+  	top: 0 !important;
+  	width: 100%;*/
+}
+
+
+
 /********* Landing Wrapper **********/
-.landing-wrapper {
+.main-wrapper {
 	background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .3)), url('../images/fotohome.jpg') ;
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center center; 
     color: #fff; 
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+.landing-wrapper{
+	padding-top: 100px;
+}
+
+.sending-amt{
+	background-color: transparent;
+	font-size: 2em;
+}
+
+
+
+
+/*#txtCalculatorAmount, #txtCalculatorAmount:focus {
+  border:none;
+}
+
+#txtCalculatorAmount {
+  animation: blink-empty 1s infinite;
+  border-right: transparent solid 1px;
+  margin:5px;
+  width: 30px;
+}
+
+@keyframes blink-empty {
+  50% {border-right: 1px solid #fff;}
+}
+*/
 
 /************ Featured In *********/
 

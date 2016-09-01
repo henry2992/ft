@@ -21,6 +21,9 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/typed.js"></script>
+
+    <script src="js/index.js"></script>
     
 
 </head>
@@ -32,106 +35,133 @@
     SingIN
     TERMS -->
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
-        </div>
+    
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+    <div class="main-wrapper">
+
+        <nav class="navbar navbar-default ft-navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="#"><img class="logo"  src="images/logo.png"></a>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
 
-    <div class="landing-wrapper">
-
-        <div class="container ">
+        <div class="container landing-wrapper  ">
             
             <h1 class="landing-title">Avoid International Transfer Fees</h1>
             <h2>Use your Friends to beat International Tranfer Fees</h2>
 
-            <h3>Estimate your savings: If you are sending <input type="text" id="txtCalculatorAmount" style="width:100px;"> From: <div style="clear:both;width:auto;">
-                    <select id="slcCalculatorFromCountry" style="width: 100px">
-                        <option value="1" selected="selected">USA</option>
-                        <option value="2">El Salvador</option>
-                        <option value="3">Panamá</option>
-                        <option value="4">Ecuador</option>
-                        <option value="5">Argentina</option>
-                        <option value="7">Brasil</option>
-                        <option value="8">Colombia</option>
-                        <option value="10">Peru</option>
-                        <option value="11">Uruguay</option>
-                        <option value="12">Venezuela</option>
-                        <option value="14">México</option>
-                        <option value="15">Bolivia</option>
-                    </select>
-                </div> To: 
-                <div style="clear:both;width:auto;">
-                    <select id="slcCalculatorToCountry" style="width: 100px">
-                        <option value="1">USA</option>
-                        <option value="2">El Salvador</option>
-                        <option value="3">Panamá</option>
-                        <option value="4" selected="selected">Ecuador</option>
-                        <option value="5">Argentina</option>
-                        <option value="7">Brasil</option>
-                        <option value="8">Colombia</option>
-                        <option value="10">Peru</option>
-                        <option value="11">Uruguay</option>
-                        <option value="12">Venezuela</option>
-                        <option value="14">México</option>
-                        <option value="15">Bolivia</option>
-                    </select>
-                </div>
-            </h3>
-            <h3>Save up to:</h3>
-            <h2>$500</h2>
+            
 
-            <button type="button" class="btn btn-primary btn-lg">Sign In with Facebook</button>
+
+            <script>
+              $(function(){
+                  $(".typed1").typed({
+                    strings: ["300  ^500", "500  ^500", "1000"],
+                    typeSpeed: 0,
+                  });
+
+                  $(".typed2").typed({
+                    strings: ["15.46  ^500", "19.31  ^500", "23.16"],
+                    typeSpeed: 0,
+                    showCursor: false
+                  });
+
+              });
+            </script>
+
+            <div id="divCalculadora"">
+                <div >
+                    <span id="spnCalcTitle">Estimate your savings: If you are sending: $</span>
+
+                   
+                    <input type="text" id="txtCalculatorAmount" class=" typed1 transparent">
+                    
+
+                    <div class="in-line">
+                        <select id="slcCalculatorFromCountry" style="width: 100px">
+                            <option value="1" selected="selected">USA</option>
+                            <option value="2">El Salvador</option>
+                            <option value="3">Panamá</option>
+                            <option value="4">Ecuador</option>
+                            <option value="5">Argentina</option>
+                            <option value="7">Brasil</option>
+                            <option value="8">Colombia</option>
+                            <option value="10">Peru</option>
+                            <option value="11">Uruguay</option>
+                            <option value="12">Venezuela</option>
+                            <option value="14">México</option>
+                            <option value="15">Bolivia</option>
+                        </select>
+                    </div>
+
+                    <span>a</span> 
+
+                    <div class="in-line">
+                        <select id="slcCalculatorToCountry" style="width: 100px">
+                            <option value="1">USA</option>
+                            <option value="2">El Salvador</option>
+                            <option value="3">Panamá</option>
+                            <option value="4" selected="selected">Ecuador</option>
+                            <option value="5">Argentina</option>
+                            <option value="7">Brasil</option>
+                            <option value="8">Colombia</option>
+                            <option value="10">Peru</option>
+                            <option value="11">Uruguay</option>
+                            <option value="12">Venezuela</option>
+                            <option value="14">México</option>
+                            <option value="15">Bolivia</option>
+                        </select>
+                    </div>
+
+                    <h1 id="txtCalculatorResult" class=" typed2 transparent"> </h1>
+    
+     
+                </div>
+                       
+
+                
+                
+                
+                    
+    
+                    
+           
+                    
+            </div>
+            
+
+            <!-- <button type="button" class="btn btn-primary btn-lg">Sign In with Facebook</button> -->
         </div>
     </div>
+
+    
 
     <div class="featured">
         <div class="container">
