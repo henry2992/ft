@@ -1,28 +1,197 @@
 /*************** Global Styles *************/
 
+body {
+	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.white{
+	color: #fff;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.center{
+	text-align: center;
+}
+
+.in-line{
+	display: inline-block;
+}
+
+.transparent {
+	background-color: transparent;
+}
 
 
-/*rgb(58, 150, 205);*/
-/*247,247,247*/
-/*60, 73, 93 */
+.ft-grey{
+	color: rgb(167,167,167);
+}
 
-/*167,167,167*/
+.ft-grey-bg{
+	background-color: rgb(247,247,247);
+}
 
-/*82,82,82*/
+
+.ft-blue {
+	color: rgb(58, 150, 205);
+}
+
+.ft-blue-bg {
+	background-color: rgb(58, 150, 205);
+}
+
+.ft-dark-grey{
+	color: rgb(82,82,82);
+}
+
+.ft-dark-blue-bg{
+	background-color: rgb(60, 73, 93);
+}
+ 
+
+.ft-mobile {
+	display: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.ft-main-title {
+	font-size: 1.75em;
+}
+
+.ft-second-title {
+	font-size: 1.25em;
+}
+
 
 /****************** Landing Page *******************/
 
 
 
+/************** Navigation Bar ******************/
+.logo{
+	margin-top: -15px
+}
+
+.logo-down{
+	width: 150px;
+}
+
+.ft-navbar{
+	min-height: 80px !important;
+	margin-bottom: 0px !important; 
+	background-color: rgba(255, 255, 255, 0.7) !important;
+	border: none !important;
+	/*background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));*/
+	border-radius: 0px !important;
+}
+
+.ft-navbar-down {
+	background-color: #fff !important;
+	min-height: 50px !important;
+}
+
+.ft-navbar-links li{
+	color: rgb(82,82,82);
+	font-weight: bold;
+}
+
+
+
 /********* Landing Wrapper **********/
-.landing-wrapper {
+.main-wrapper {
 	background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .3)), url('../images/fotohome.jpg') ;
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center center; 
-    color: #fff; 
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+.landing-wrapper{
+	padding-top: 50px;
+}
+
+.sending-amt{
+	background-color: transparent;
+	font-size: 2em;
+}
+
+.landing-title{
+	font-size: 2em;
+	margin: 100px 0 25px 0 !important;
+}
+
+
+.landing-title-2 {
+	font-size: 1em;
+}
+
+#divCalculadora{
+	margin-top: 50px;
+	height: 275px;
+}
+
+.save-up{
+	display: block;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	font-weight: bold;
+	margin-top: 25px !important;
+}
+
+.est-savigs{
+	text-transform: uppercase;;
+	font-size: 1em;
+}
+
+#txtCalculatorAmount, #txtCalculatorAmount:focus {
+  border:none;
+  padding: 0;
+}
+
+#txtCalculatorAmount {
+  animation: blink-empty 1s infinite;
+  border-right: transparent solid 1px;
+  margin: 15px auto !important;
+}
+
+@keyframes blink-empty {
+  50% {border-right: 1px solid #fff;}
+}
+
+
+
+.savings-result{
+	height: 100px;
+}
+
+.savings-result h1 {
+	font-size: 3.5em;
+}
+
+.ft-sign-btn{
+	background-color: rgb(59, 89, 152) !important;
+	border-radius: 0 !important;
+	border: white solid 1px !important;
+	margin-top: 35px;
+}
+
+.ft-sign-btn img{
+	width: 40px;
+	margin-left: -10px;
+	margin-right: 20px;
+	margin-top: -5px;
 }
 
 
@@ -31,16 +200,28 @@
 .featured {
 	text-align: center;
 	height: 150px;
-	border: 1px solid black;	
 }
 
 .feature-text{
-	margin-top: 25px;
+	text-align: left;
+	display: table;
+	position: relative;
+	height: 150px;
+	/*width: 100%;*/
+}
+
+.feature-text h4{
+	position: absolute; 
+	top: 30%;
+	left: 60%;
+	display: table-cell; 
+	vertical-align: middle;
+	margin-left: -60px;
+	
 }
 
 .featured-img {
 	width: 100%;
-	border: solid red 1px;
 	height: 150px;
 	display: table;
 	position: relative;
@@ -59,8 +240,65 @@
 
 .ftr-img-fix {
 	width: 50px !important;
-
 	margin-left: -30px !important;
+}
+
+/************ How-works ***************/
+
+.how-works{
+	padding: 50px 0;
+}
+
+.hw-wrapper{
+	margin-top: 25px;
+}
+
+.hw-wrapper img {
+	margin-bottom: 15px;
+}
+
+.hw-wrapper h2 {
+	margin-bottom: 15px !important;
+}
+
+
+/************** Your-money ****************/
+
+.your-money {
+	background:  url('../images/imagen1.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+    text-align: center;
+    height: 250px;
+}
+
+.your-money-title {
+	margin-top: 80px !important;
+	font-size: 2em;
+}
+
+
+/************** Why FT ************/
+
+
+.why-ft{
+	padding: 50px 0;
+}
+
+.why-ft-ls {
+	margin: 15px auto !important;
+	padding: 0 !important
+}
+
+.why-ft-ls li{
+	list-style: none;
+	width: 80%;
+	margin: 25px auto 0;
+}
+
+.ft-videos:hover{
+	cursor: pointer;
 }
 
 
@@ -68,7 +306,220 @@
 
 
 
+/************** Reviews **************/
+
+.reviews{
+	/*height: 100%;*/
+}
 
 
+
+
+.reviews-carousel{
+	min-height: 425px;
+	padding: 50px 0;
+}
+
+.reviews-carousel-inner{
+	margin: 0px !important
+}
+
+.reviews-indicators li{
+	height: 15px !important;
+	width: 15px !important;
+	background-color: #fff !important;
+}
+
+.reviews-indicators .active{
+	background-color: rgb(167,167,167) !important;
+}
+
+
+.reviews-title{
+	margin-bottom: 10px !important;
+}
+
+
+.review-comment{
+	width: 80%;
+	font-size: 1em;
+	width: 80%;
+	margin: 0 auto ;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+/*.review-qoute{
+	font-size: 2.5em;
+	font-style: italic;
+
+}*/
+
+.reviews-people img{
+	width: 100px;
+}
+
+.reviews-reason{
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+/**************** Save Money *******************/
+
+.save-money{
+	padding: 50px 0;
+}
+
+.save-money-btn{
+	margin: 0 auto;
+}
+
+.ft-save-title{
+	font-size: 4em;
+}
+
+.ft-sm-second-title{
+	font-size: 1em;
+	margin-top: 15px !important;
+}
+
+.ft-sm-third-title{
+	font-size: 1.5em;
+	margin-top: 25px !important;
+}
+
+
+/****************** FeedBack ******************/
+
+.feedback{
+	padding: 30px 0;
+}
+
+.feedback-email{
+	margin-top: 25px;
+}
+
+/******************** Footer ****************/
+
+.footer{
+	padding: 30px;
+}
+
+.footer-list{
+	list-style: none;
+}
+
+.footer-list li{
+	display: inline-block;
+}
+
+
+.social-links  {
+	text-align: center;
+	border-radius: 50%;
+	background-color: white;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
+
+.copyright{
+	margin-top: 25px;
+}
+
+
+/******************************************************************************/
+/******************************** Media Queries ******************************/
+/****************************************************************************/
+
+
+/* Smartphones  ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-device-width : 768px)  {
+
+	.main-wrapper {
+	    min-height: 100%;
+	}
+
+	.ft-mobile {
+		display: block;
+	}
+
+	.ft-main-title {
+		font-size: 3em;
+	}
+
+	.ft-second-title {
+		font-size: 2em;
+	}
+
+	
+	.landing-title{
+		font-size: 3.25em;
+		margin: 25px 0 25px 0 !important;
+	}
+
+	.landing-title-2 {
+		font-size: 1.75em;
+		line-height: 2px;
+	}
+
+	.ft-sign-btn{
+		margin-top: 0px;
+	}
+
+	/*Reviews*/
+	.review-comment{
+		font-size: 1.5em;
+		margin-top: 50px;
+	}
+	
+	.reviews-title{
+		margin-bottom: 50px !important;
+	}
+
+	.reviews-reason{
+		width: 50%;
+	}
+
+	/* Save Money */
+	.ft-sm-third-title{
+		/*font-size: 1.5em;*/
+		margin-bottom: 25px !important;
+	}
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+	
+
+	.landing-title{
+		font-size: 4.5em;
+	}
+
+	.landing-title-2 {
+		font-size: 2em;
+	}
+
+	.why-ft-ls li{
+		width: 60%;
+	}
+
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
 
 
