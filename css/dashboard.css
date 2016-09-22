@@ -89,8 +89,13 @@
 }
 
 /* Mian Dashboard */
+.dashboard-wrapper{
+	margin-top: 50px;
+}
 
-
+.transaction-form {
+	margin-bottom: 25px;
+}
 
 /******* Transaction ******/
 
@@ -116,6 +121,7 @@
 
 .transaction-need{
 	font-size: 1.5em;
+	text-align: center;
 }
 
 
@@ -142,14 +148,19 @@
 
 .limit-text{
 	font-size: 0.55em !important;
-	margin-left: 100px;
+	margin-left: 120px;
+	text-align: left;
 }
+
+
+
+
 
 /********** Offer ***********/
 
 .transaction-offer{
 	font-size: 1.5em;
-
+	text-align: center;
 }
 
 .offer-amt{
@@ -173,15 +184,95 @@
 	border-bottom: 1px solid rgb(184,184,184);
 }
 
+.proposal-btn {
+	padding: 10px 30px !important;
+	font-size: 1.5em !important;
+	margin-top: 20px;
+}
 
+.proposal-btn:hover {
+	color: white !important;
+}
 
 
 /******* Friends Dashboard *****/
 
 .friends-holder{
-	border: 1px solid blue;
-	height: 100px;
+	border-left: 1px dashed #ddd;
 }
+
+.selfProfile{
+    width: 125px;
+}
+
+.profile-name h3{
+	font-size: 1em;
+	color: black;
+	font-weight: bold;
+	overflow: hidden;
+    position: relative;
+}
+
+.profile-name:hover{
+	text-decoration: none;
+}
+
+.profile-name h3:before{
+	left: -20px;
+    margin: 0 0 0 -200%;
+}
+
+
+.profile-name h3:after{
+    content: "";
+    width: 200%;
+    height: 0.75em;
+    display: inline-block;
+    margin: 0 -200% 0 0;
+    position: relative;
+    left: 20px;
+    bottom: 0.2em;
+    background: url(../images/bg-head.jpg) repeat-x;
+    vertical-align: bottom;
+}
+
+
+.ft-profile-progress{
+	margin-bottom: 10px !important;
+}
+
+.profile-friends{
+	font-size: 1.15em;
+	font-weight: bold;
+}
+
+
+
+.profile-fb-friends ul{
+	list-style-type: none;
+	padding: 0;
+}
+.profile-fb-friends ul li{
+	display: inline-block;
+}
+.profile-fb-friends ul li img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 15px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -275,7 +366,7 @@
 }
 
 
-
+/*******************************************/
 
 
 

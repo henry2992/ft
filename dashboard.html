@@ -69,465 +69,452 @@
         </div>
 
 
-
-        <!-- Propouse a transaction -->
-        <div class="container">  
-            <div class="main-dashboard-holder">
-                <div class="row">
-                    <div class="col-md-8 ">
-                        <div class="ft-dashboard-tabs">
-                            <ul class="nav nav-tabs nav-justified">
-                              <li role="presentation" class="active"><a href="#">PROPOSE A TRANSACTION</a></li>
-                              <li role="presentation"><a href="#">SEARCH PROPOSAL</a></li>
-                              <li role="presentation"><a href="#">SEARCH PROFILE</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="transactions-holder">
-                            
-                            <!-- I Need -->
-                            <div class="transaction-need ft-grey">
-
-                                <span>I need</span>
-
-                                <input class="need-amt field-subject numeric" type="text" id="txtAmount" placeholder="Amount US$" >
-                                
-                                <span class="">In</span>
-
-                                <label class="ft-label">
-                                    <span class=" custom-dropdown custom-dropdown--grey">
-                                        <select class="need-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryTo">
-                                            <option value="1">USA</option>
-                                            <option value="2">El Salvador</option>
-                                            <option value="3">Panamá</option>
-                                            <option value="4">Ecuador</option>
-                                            <option value="5">Argentina</option>
-                                            <option value="6">Australia</option>
-                                            <option value="7">Brasil</option>
-                                            <option value="8">Colombia</option>
-                                            <option value="10">Peru</option>
-                                            <option value="11">Uruguay</option>
-                                            <option value="12">Venezuela</option>
-                                            <option value="14">México</option>
-                                            <option value="15">Bolivia</option>
-                                        </select>
-                                    </span>
-                                </label>
-
-                               
-                                <!-- Limit -->
-                                <p class="limit-text">
-                                    <span id="spnPTLimit" class="ft-blue">Your limit is: $ </span><span class="ft-blue" id="maxamount">4550.00</span> 
-                                    <img class="" src="images/help_20.png">
-                                </p>
-                                
+        <div class="dashboard-wrapper">
+            <!-- Propouse a transaction -->
+            <div class="container">  
+                <div class="main-dashboard-holder">
+                    <div class="row">
+                        <div class="col-md-8 ">
+                            <div class="ft-dashboard-tabs">
+                                <ul class="nav nav-tabs nav-justified">
+                                  <li role="presentation" class="active"><a href="#">PROPOSE A TRANSACTION</a></li>
+                                  <li role="presentation"><a href="#">SEARCH PROPOSAL</a></li>
+                                  <li role="presentation"><a href="#">SEARCH PROFILE</a></li>
+                                </ul>
                             </div>
 
-                            
-              
-                            <!-- Transaction Offer -->
-                            <div class="transaction-offer ft-grey">
-                                                                
+                            <div class="transactions-holder">
+                                
+                                <div class="transaction-form">
+                                    <!-- I Need -->
+                                    <div class="transaction-need ft-grey">
+
+                                        <span>I need</span>
+
+                                        <input class="need-amt field-subject numeric" type="text" id="txtAmount" placeholder="Amount US$" >
+                                        
+                                        <span class="">In</span>
+
+                                        <label class="ft-label">
+                                            <span class=" custom-dropdown custom-dropdown--grey">
+                                                <select class="need-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryTo">
+                                                    <option value="1">USA</option>
+                                                    <option value="2">El Salvador</option>
+                                                    <option value="3">Panamá</option>
+                                                    <option value="4">Ecuador</option>
+                                                    <option value="5">Argentina</option>
+                                                    <option value="6">Australia</option>
+                                                    <option value="7">Brasil</option>
+                                                    <option value="8">Colombia</option>
+                                                    <option value="10">Peru</option>
+                                                    <option value="11">Uruguay</option>
+                                                    <option value="12">Venezuela</option>
+                                                    <option value="14">México</option>
+                                                    <option value="15">Bolivia</option>
+                                                </select>
+                                            </span>
+                                        </label>
+
+                                       
+                                        <!-- Limit -->
+                                        <p class="limit-text ">
+                                            <span id="spnPTLimit" class="ft-blue">Your limit is: $ </span><span class="ft-blue" id="maxamount">4550.00</span> 
+                                            <img class="" src="images/help_20.png">
+                                        </p>
+                                    </div>
+
+                                    <!-- Transaction Offer -->
+                                    <div class="transaction-offer ft-grey">
+                                                                            
+                                        <span>I offer</span>
                                     
-                                <span>I offer</span>
-                            
-                                <label class="offer-amt" id="spnAmountO" >Amount US$</label>
+                                        <label class="offer-amt" id="spnAmountO" >Amount US$</label>
 
-                                <span>In</span> 
-                                   
-                                <label class="ft-label">
-                                    <span class=" custom-dropdown custom-dropdown--grey">
-                                        <select class="need-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryFrom" >
-                                            <option value="1">USA</option>
-                                            <option value="2">El Salvador</option>
-                                            <option value="3">Panamá</option>
-                                            <option value="4">Ecuador</option>
-                                            <option value="5">Argentina</option>
-                                            <option value="6">Australia</option>
-                                            <option value="7">Brasil</option>
-                                            <option value="8">Colombia</option>
-                                            <option value="10">Peru</option>
-                                            <option value="11">Uruguay</option>
-                                            <option value="12">Venezuela</option>
-                                            <option value="14">México</option>
-                                            <option value="15">Bolivia</option>
-                                        </select>
+                                        <span>In</span> 
+                                           
+                                        <label class="ft-label">
+                                            <span class=" custom-dropdown custom-dropdown--grey">
+                                                <select class="need-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryFrom" >
+                                                    <option value="1">USA</option>
+                                                    <option value="2">El Salvador</option>
+                                                    <option value="3">Panamá</option>
+                                                    <option value="4">Ecuador</option>
+                                                    <option value="5">Argentina</option>
+                                                    <option value="6">Australia</option>
+                                                    <option value="7">Brasil</option>
+                                                    <option value="8">Colombia</option>
+                                                    <option value="10">Peru</option>
+                                                    <option value="11">Uruguay</option>
+                                                    <option value="12">Venezuela</option>
+                                                    <option value="14">México</option>
+                                                    <option value="15">Bolivia</option>
+                                                </select>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+
+                                <span class="ft-grey">When do you need the money?</span>
+
+                                <!-- Options -->
+                                
+                                <div class="transaction-options-holder">
+                                    <label class="ft-grey"><input id="rbdDateNO" name="rbdDateNeeded" type="radio" value="0" checked="">  <span id="spnPTSoon">As soon as possible</span></label>
+                                                       
+                                    <label class="ft-grey"><input id="rbdDateYES" name="rbdDateNeeded" type="radio" value="1"> <span id="spnPTSpecific">Specific date</span></label>
+                                    
+                                    <div class="proposal-dates">
+                                        <div>
+                                            <input id="rdbBefore" type="radio" name="Moment" value="1" checked="checked">
+                                            <span id="spnPTBefore">Before</span>
+                                        <br>
+                                            <input id="rdbAfter" type="radio" name="Moment" value="2">
+                                            <span id="spnPTAfter">After</span>
+                                        <br>
+                                            <input id="rdbAround" type="radio" name="Moment" value="3">
+                                            <span id="spnPTAround">Around</span>
+                                        <br>
+                                            <input id="rdbExactly" type="radio" name="Moment" value="4">
+                                            <span id="spnPTExactly">Exactly</span>
+                                        </div>
+
+                                        <div >
+                                            <input class="dates field-subject hasDatepicker" type="text" id="txtNeededDate" placeholder="Select date">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script type="text/javascript">
+
+                                    //el div de fecha especifica sale oculto.
+                                    $('.proposal-dates').hide();
+
+                                    $("#rbdDateYES").bind("change", function () {
+                                        $('.proposal-dates').show();
+                                    });
+
+                                    $("#rbdDateNO").bind("change", function () {
+                                        $('.proposal-dates').hide();
+                                    });
+
+                                </script>
+
+                                <!-- Calculador -->
+
+                                <p>Need to calculate this amount of USD in your local currency? <a href="">Check Now</a></p>
+
+                                <div class="center">
+                                    <input  value="MAKE A PROPOSAL!" class="proposal-btn btn bnt-large ft-blue-bg white btn-submit">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 friends-holder">
+                            <div>
+
+                                <a href=""><img src="images/myuser.jpg" class="selfProfile"></a>
+                                
+                                <!-- Categories List -->
+                                <a href="" class="profile-name"><h3 class=" uppercase ">Henry Sebastián Remache</h3></a>
+                                
+                                <p>Chicago, Illinois</p>
+                                <p>Your profile is 30% complete</p>
+                                <div class="ft-profile-progress progress">
+                                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                    <span class="sr-only">20% Complete</span>
+                                  </div>
+                                </div>
+                                <a href="" rel="nofollow"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit Profile</a>
+                                <p>Improve your profile to secure better matches</p>
+
+                                <!-- End Categories List -->
+                                
+                                <div>
+                                    <h3 class="profile-friends ft-blue center"> YOUR FRIENDS ON FRIENDLY TRANSFER </h3>
+
+                                    <div class="profile-fb-friends center">
+                                        <ul>
+                                            <li><img src="images/ref-user1.jpg"></li>
+                                            <li><img src="images/ref-user2.jpg"></li>
+                                            <li><img src="images/ref-user3.jpg"></li>
+                                        </ul>
+                                        <p class="pull-right"><a> See more </a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Proposals That Might Interest you -->
+            <div class="container">
+                <div class=" interest-proposals-wrapper ">
+                    
+                    <h1 class="ft-blue uppercase center">Proposals that may interest you</h1>
+
+                    <div class="row proposals-holder">
+                        
+                        <div class="col-sm-3">
+                            <div class="frame-img">
+                                <img src="images/ref-user1.jpg" class="int-pro-img">
+                            </div>
+
+                            <div class="pr-frame-content">
+                                <div class="pr-content-name">
+                                    <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
+                                </div>
+                                <div class="pr-content-stars">
+                                    <span class="spnStarsClass" data-memberid="102">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o">   
+                                        </i> 
                                     </span>
-                                </label>
-        
-                            </div>
-
-                            
-
-                            <span class="ft-grey"> When do you need the money?</span>
-
-                            <!-- Options -->
-                            
-                            <div class="transaction-options-holder">
-                                <label class="ft-grey"><input id="rbdDateNO" name="rbdDateNeeded" type="radio" value="0" checked="">  <span id="spnPTSoon">As soon as possible</span></label>
-                                                   
-                                <label class="ft-grey"><input id="rbdDateYES" name="rbdDateNeeded" type="radio" value="1"> <span id="spnPTSpecific">Specific date</span></label>
-                                
-                                <div class="hide">
-                                    <div>
-                                        <input id="rdbBefore" type="radio" name="Moment" value="1" checked="checked">
-                                        <span id="spnPTBefore">Before</span>
-                                    <br>
-                                        <input id="rdbAfter" type="radio" name="Moment" value="2">
-                                        <span id="spnPTAfter">After</span>
-                                    <br>
-                                        <input id="rdbAround" type="radio" name="Moment" value="3">
-                                        <span id="spnPTAround">Around</span>
-                                    <br>
-                                        <input id="rdbExactly" type="radio" name="Moment" value="4">
-                                        <span id="spnPTExactly">Exactly</span>
-                                    </div>
-
-                                    <div >
-                                        <input class="dates field-subject hasDatepicker" type="text" id="txtNeededDate" placeholder="Select date">
-                                    </div>
+                                    <span>(3)</span>
                                 </div>
 
+                                <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
+                                <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
+
+                                <div class="pr-contact ">
+                                    <a href="" class="btn btn-primary white ">Contact Me</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="frame-img">
+                                <img src="images/ref-user2.jpg" class="int-pro-img">
                             </div>
 
-                            <!-- Calculador -->
+                            <div class="pr-frame-content">
+                                <div class="pr-content-name">
+                                    <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
+                                </div>
+                                <div class="pr-content-stars">
+                                    <span class="spnStarsClass" data-memberid="102">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o">   
+                                        </i> 
+                                    </span>
+                                    <span>(3)</span>
+                                </div>
 
-                            <p>Need to calculate this amount of USD in your local currency? <a href="">Check Now</a></p>
+                                <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
+                                <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
 
-                            <div class="center">
-                                <input  value="MAKE A PROPOSAL!" class="btn bnt-large ft-blue-bg white btn-submit">
+                                <div class="pr-contact ">
+                                    <a href="" class="btn btn-primary white ">Contact Me</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="frame-img">
+                                <img src="images/ref-user3.jpg" class="int-pro-img">
+                            </div>
+
+                            <div class="pr-frame-content">
+                                <div class="pr-content-name">
+                                    <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
+                                </div>
+                                <div class="pr-content-stars">
+                                    <span class="spnStarsClass" data-memberid="102">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o">   
+                                        </i> 
+                                    </span>
+                                    <span>(3)</span>
+                                </div>
+
+                                <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
+                                <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
+
+                                <div class="pr-contact ">
+                                    <a href="" class="btn btn-primary white ">Contact Me</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="frame-img">
+                                <img src="images/ref-user4.jpg" class="int-pro-img">
+                            </div>
+
+                            <div class="pr-frame-content">
+                                <div class="pr-content-name">
+                                    <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
+                                </div>
+                                <div class="pr-content-stars">
+                                    <span class="spnStarsClass" data-memberid="102">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o">   
+                                        </i> 
+                                    </span>
+                                    <span>(3)</span>
+                                </div>
+
+                                <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
+                                <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
+
+                                <div class="pr-contact ">
+                                    <a href="" class="btn btn-primary white ">Contact Me</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4 friends-holder">
-                        <div>
+                    <div class="row proposals-holder">
+                        
+                        <div class="col-sm-3">
+                            <div class="frame-img">
+                                <img src="images/ref-user1.jpg" class="int-pro-img">
+                            </div>
 
-                            <a href="profile.aspx"><img id="imgSelfProfile" src="profiles/images/1214.jpg" class="selfProfile" onerror="imgError(this);"></a>
-                            <!-- Categories List -->
-                            <a href="profile.aspx"><h3 id="h3Profile" class="lined">Henry Sebastián Remache</h3></a>
-                            <ul class="b-list">
-                                <li id="liCountryProfile">Chicago, Illinois</li>
-                                <li>
-                                    <div class="b-progress-bar" data-capacity="100" data-value="100">
-                                        <div class="progress-label">
-                                            <span id="spnDPp1" class="inline">Your profile is</span> <span id="spProfilePercent" style="display: inline;">30</span>% <span id="spnDPp2" class="inline">complete</span>
-                                        </div>
-                                        <div class="progress-scale">
-                                            <div id="divProgressBar" class="progress-line m-4" style="width: 30%;">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <a href="edit-profile.aspx" rel="nofollow"><i class="icon-edit"></i>
-                                        <div style="top: 20px;"><span id="spnDEditProfile">Edit Profile</span></div>
-                                    </a>
-                                    <label id="lblDImprove">Improve your profile to secure better matches</label>
-                                </li>
-                            </ul>
-                            <!-- End Categories List -->
-                            <!-- TO DO -->
-                            <h3 id="h3DDo" class="lined">TO DO</h3>
-                            <ul class="b-list recent-post">
-                                <li><a id="hrfDNewProposal" href="create-request.aspx" rel="nofollow">Propose a Transaction</a></li>
-                                <li><a id="hrfDSearchProposal" href="search-requests.aspx" rel="nofollow">Search Proposals</a><br>
-                                   <!-- <br /> -->
-                                </li>
-                                <li><a id="hrfDSearchProfiles" href="search-profiles.aspx" rel="nofollow">Search Profiles</a></li>
-                              
-                                
-                            </ul>
-                            <!-- End TO DO -->
-                            <!-- QUICK LINKS Insertar mobile -->
-                            <div class="b-spoiler m-alt active">
-                                <div class="spoiler-title active">
-                                    <h3 id="h3DFriends" class="lined">YOUR FRIENDS ON FRIENDLY TRANSFER </h3>
+                            <div class="pr-frame-content">
+                                <div class="pr-content-name">
+                                    <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
                                 </div>
-                                <div class="matchingProposalsHideLine spoiler-content" style="width: auto; margin: 0 auto;">
-                                    <div class="fb-like fb_iframe_widget" data-href="https://www.friendlytransfer.com/home.aspx" data-width="100" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1641993342711743&amp;container_width=234&amp;href=https%3A%2F%2Fwww.friendlytransfer.com%2Fhome.aspx&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=100"><span style="vertical-align: bottom; width: 96px; height: 20px;"><iframe name="f3af71f8c8" width="100px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1641993342711743&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FP5DLcu0KGJB.js%3Fversion%3D42%23cb%3Df29d4c7c28%26domain%3Dfriendlytransfer.com%26origin%3Dhttps%253A%252F%252Ffriendlytransfer.com%252Ff406ac53c%26relation%3Dparent.parent&amp;container_width=234&amp;href=https%3A%2F%2Fwww.friendlytransfer.com%2Fhome.aspx&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=100" class="" style="border: none; visibility: visible; width: 96px; height: 20px;"></iframe></span></div>
-                                    <ul class="" style="list-style: none;" id="ulFriends">
-                                    </ul>
+                                <div class="pr-content-stars">
+                                    <span class="spnStarsClass" data-memberid="102">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o">   
+                                        </i> 
+                                    </span>
+                                    <span>(3)</span>
+                                </div>
+
+                                <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
+                                <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
+
+                                <div class="pr-contact ">
+                                    <a href="" class="btn btn-primary white ">Contact Me</a>
                                 </div>
                             </div>
-                            <br style="clear:both;">
-                            <!-- End QUICK LINKS  -->
+                        </div>
 
+                        <div class="col-sm-3">
+                            <div class="frame-img">
+                                <img src="images/ref-user2.jpg" class="int-pro-img">
+                            </div>
 
+                            <div class="pr-frame-content">
+                                <div class="pr-content-name">
+                                    <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
+                                </div>
+                                <div class="pr-content-stars">
+                                    <span class="spnStarsClass" data-memberid="102">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o">   
+                                        </i> 
+                                    </span>
+                                    <span>(3)</span>
+                                </div>
 
-                                            </div>
+                                <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
+                                <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
+
+                                <div class="pr-contact ">
+                                    <a href="" class="btn btn-primary white ">Contact Me</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="frame-img">
+                                <img src="images/ref-user3.jpg" class="int-pro-img">
+                            </div>
+
+                            <div class="pr-frame-content">
+                                <div class="pr-content-name">
+                                    <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
+                                </div>
+                                <div class="pr-content-stars">
+                                    <span class="spnStarsClass" data-memberid="102">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o">   
+                                        </i> 
+                                    </span>
+                                    <span>(3)</span>
+                                </div>
+
+                                <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
+                                <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
+
+                                <div class="pr-contact ">
+                                    <a href="" class="btn btn-primary white ">Contact Me</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="frame-img">
+                                <img src="images/ref-user4.jpg" class="int-pro-img">
+                            </div>
+
+                            <div class="pr-frame-content">
+                                <div class="pr-content-name">
+                                    <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
+                                </div>
+                                <div class="pr-content-stars">
+                                    <span class="spnStarsClass" data-memberid="102">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o">   
+                                        </i> 
+                                    </span>
+                                    <span>(3)</span>
+                                </div>
+
+                                <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
+                                <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
+
+                                <div class="pr-contact ">
+                                    <a href="" class="btn btn-primary white ">Contact Me</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+
                 </div>
             </div>
+            
         </div>
-
-
-        <!-- Proposals That Might Interest you -->
-        <div class="container">
-            <div class=" interest-proposals-wrapper ">
-                
-                <h1 class="ft-blue uppercase center">Proposals that may interest you</h1>
-
-                <div class="row proposals-holder">
-                    
-                    <div class="col-sm-3">
-                        <div class="frame-img">
-                            <img src="images/ref-user1.jpg" class="int-pro-img">
-                        </div>
-
-                        <div class="pr-frame-content">
-                            <div class="pr-content-name">
-                                <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
-                            </div>
-                            <div class="pr-content-stars">
-                                <span class="spnStarsClass" data-memberid="102">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o">   
-                                    </i> 
-                                </span>
-                                <span>(3)</span>
-                            </div>
-
-                            <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
-                            <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
-                            <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
-
-                            <div class="pr-contact ">
-                                <a href="" class="btn btn-primary white ">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="frame-img">
-                            <img src="images/ref-user2.jpg" class="int-pro-img">
-                        </div>
-
-                        <div class="pr-frame-content">
-                            <div class="pr-content-name">
-                                <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
-                            </div>
-                            <div class="pr-content-stars">
-                                <span class="spnStarsClass" data-memberid="102">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o">   
-                                    </i> 
-                                </span>
-                                <span>(3)</span>
-                            </div>
-
-                            <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
-                            <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
-                            <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
-
-                            <div class="pr-contact ">
-                                <a href="" class="btn btn-primary white ">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="frame-img">
-                            <img src="images/ref-user3.jpg" class="int-pro-img">
-                        </div>
-
-                        <div class="pr-frame-content">
-                            <div class="pr-content-name">
-                                <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
-                            </div>
-                            <div class="pr-content-stars">
-                                <span class="spnStarsClass" data-memberid="102">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o">   
-                                    </i> 
-                                </span>
-                                <span>(3)</span>
-                            </div>
-
-                            <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
-                            <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
-                            <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
-
-                            <div class="pr-contact ">
-                                <a href="" class="btn btn-primary white ">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="frame-img">
-                            <img src="images/ref-user4.jpg" class="int-pro-img">
-                        </div>
-
-                        <div class="pr-frame-content">
-                            <div class="pr-content-name">
-                                <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
-                            </div>
-                            <div class="pr-content-stars">
-                                <span class="spnStarsClass" data-memberid="102">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o">   
-                                    </i> 
-                                </span>
-                                <span>(3)</span>
-                            </div>
-
-                            <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
-                            <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
-                            <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
-
-                            <div class="pr-contact ">
-                                <a href="" class="btn btn-primary white ">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row proposals-holder">
-                    
-                    <div class="col-sm-3">
-                        <div class="frame-img">
-                            <img src="images/ref-user1.jpg" class="int-pro-img">
-                        </div>
-
-                        <div class="pr-frame-content">
-                            <div class="pr-content-name">
-                                <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
-                            </div>
-                            <div class="pr-content-stars">
-                                <span class="spnStarsClass" data-memberid="102">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o">   
-                                    </i> 
-                                </span>
-                                <span>(3)</span>
-                            </div>
-
-                            <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
-                            <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
-                            <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
-
-                            <div class="pr-contact ">
-                                <a href="" class="btn btn-primary white ">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="frame-img">
-                            <img src="images/ref-user2.jpg" class="int-pro-img">
-                        </div>
-
-                        <div class="pr-frame-content">
-                            <div class="pr-content-name">
-                                <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
-                            </div>
-                            <div class="pr-content-stars">
-                                <span class="spnStarsClass" data-memberid="102">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o">   
-                                    </i> 
-                                </span>
-                                <span>(3)</span>
-                            </div>
-
-                            <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
-                            <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
-                            <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
-
-                            <div class="pr-contact ">
-                                <a href="" class="btn btn-primary white ">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="frame-img">
-                            <img src="images/ref-user3.jpg" class="int-pro-img">
-                        </div>
-
-                        <div class="pr-frame-content">
-                            <div class="pr-content-name">
-                                <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
-                            </div>
-                            <div class="pr-content-stars">
-                                <span class="spnStarsClass" data-memberid="102">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o">   
-                                    </i> 
-                                </span>
-                                <span>(3)</span>
-                            </div>
-
-                            <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
-                            <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
-                            <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
-
-                            <div class="pr-contact ">
-                                <a href="" class="btn btn-primary white ">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="frame-img">
-                            <img src="images/ref-user4.jpg" class="int-pro-img">
-                        </div>
-
-                        <div class="pr-frame-content">
-                            <div class="pr-content-name">
-                                <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
-                            </div>
-                            <div class="pr-content-stars">
-                                <span class="spnStarsClass" data-memberid="102">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o">   
-                                    </i> 
-                                </span>
-                                <span>(3)</span>
-                            </div>
-
-                            <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
-                            <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
-                            <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
-
-                            <div class="pr-contact ">
-                                <a href="" class="btn btn-primary white ">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-        </div>
-
 
 
 
