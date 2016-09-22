@@ -2,7 +2,9 @@
 
 body {
 	font-size: 18px;
+	letter-spacing: 0px !important;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
 	padding: 0px !important;
@@ -54,6 +56,10 @@ h1, h2, h3, h4, h5, h6 {
 .ft-dark-blue-bg{
 	background-color: rgb(60, 73, 93);
 }
+
+.ft-dark-blue{
+	color: rgb(60, 73, 93);
+}
  
 
 .ft-mobile {
@@ -72,15 +78,30 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 1.25em;
 }
 
+.hide{
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+/* Label Fix*/
+.ft-label{
+	font-weight: normal !important;
+	margin-bottom: 0px !important;
+}
 
 /****************** Landing Page *******************/
 
 
 
 /************** Navigation Bar ******************/
+
 .logo{
 	margin-top: -15px
 }
+
 
 .logo-down{
 	width: 150px;
@@ -105,6 +126,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
+.harvard{
+	position: absolute;
+	right: 25px;
+}
 
 
 /********* Landing Wrapper **********/
@@ -194,6 +219,29 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: -5px;
 }
 
+.sending-amt{
+	background-color: transparent;
+	font-size: 2em;
+}
+
+
+
+
+/*#txtCalculatorAmount, #txtCalculatorAmount:focus {
+  border:none;
+}
+
+#txtCalculatorAmount {
+  animation: blink-empty 1s infinite;
+  border-right: transparent solid 1px;
+  margin:5px;
+  width: 30px;
+}
+
+@keyframes blink-empty {
+  50% {border-right: 1px solid #fff;}
+}
+*/
 
 /************ Featured In *********/
 
@@ -237,6 +285,27 @@ h1, h2, h3, h4, h5, h6 {
 	vertical-align: middle;
 	margin-left: -60px;
 }
+
+
+.bbva{
+	width: 100%;
+	height: 150px;
+	display: table;
+	position: relative;
+}
+
+
+.bbva img{
+	width: 75px;
+	text-align: center;
+	position: absolute; 
+	top: 25%;
+	left: 50%;
+	display: table-cell; 
+	vertical-align: middle;
+	/*margin-left: -20px;*/
+}
+
 
 .ftr-img-fix {
 	width: 50px !important;
@@ -381,8 +450,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ft-sm-second-title{
-	font-size: 1em;
+	font-size: 1em !important;
 	margin-top: 15px !important;
+	margin-bottom: 10px !important
 }
 
 .ft-sm-third-title{
@@ -442,7 +512,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Medium size screens  ----------- */
-@media only screen and (min-device-width : 768px)  {
+@media only screen and (min-width : 768px)  {
 
 	.main-wrapper {
 	    min-height: 100%;
@@ -493,6 +563,10 @@ h1, h2, h3, h4, h5, h6 {
 	.ft-sm-third-title{
 		/*font-size: 1.5em;*/
 		margin-bottom: 25px !important;
+	}
+
+	.ft-sm-second-title{
+		font-size: 2em !important;
 	}
 
 }

@@ -1,0 +1,307 @@
+.custom-dropdown--large {
+	font-size: 1.5em;
+}
+
+.custom-dropdown--small {
+	font-size: .7em;
+}
+
+.custom-dropdown__select{
+	font-size: inherit; /* inherit size from .custom-dropdown */
+	padding: 10px;
+	/*margin-top: -15px;*/
+}
+
+.custom-dropdown__select--grey {
+	background-color: rgb(233, 233, 233);
+	color: rgba(167, 167, 167, 0.6);  
+}
+
+@supports (pointer-events: none) and
+	  ((-webkit-appearance: none) or
+	  (-moz-appearance: none) or
+	  (appearance: none)) {
+
+	.custom-dropdown {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.custom-dropdown__select {
+		padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */
+		border: 0;
+		border-radius: 3px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;    
+	}
+
+	.custom-dropdown::before,
+	.custom-dropdown::after {
+		content: "";
+		position: absolute;
+		pointer-events: none;
+	}
+
+	.custom-dropdown::after { /*  Custom dropdown arrow */
+		content: "\25BC";
+		height: 1em;
+		font-size: .625em;
+		line-height: 1;
+		right: 1.2em;
+		top: 50%; 
+		margin-top: -.7em;
+	}
+
+	.custom-dropdown::before { /*  Custom dropdown arrow cover */
+		width: 2em;
+		right: 0; top: 0; bottom: 0;
+		border-radius: 0 3px 3px 0;
+	}
+
+	.custom-dropdown__select[disabled] {
+		color: rgba(0,0,0,.3);
+	}
+
+	.custom-dropdown.custom-dropdown--disabled::after {
+		color: rgba(0,0,0,.1);
+	}
+
+	/* White dropdown style */
+	.custom-dropdown--grey::before {
+		background-color: rgb(233, 233, 233);
+		border-left: 1px solid rgba(167, 167, 167,.1);
+	}
+
+	/* DropDown arrow */
+	.custom-dropdown--grey::after {
+		color: rgba(58, 150, 205,.9);
+		background-color: rgb(233, 233, 233);
+	}
+
+	/* FF only temp fix */
+	@-moz-document url-prefix() {
+		.custom-dropdown__select 			 { padding-right: .9em }
+		.custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
+		.custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
+	}
+}
+
+/* Mian Dashboard */
+
+
+
+/******* Transaction ******/
+
+.transactions-holder{
+	border: 1px solid #ddd;
+	padding: 75px !important;
+}
+
+.ft-dashboard-tabs ul li a{
+	border-top: 1px solid #ddd !important;
+	border-right: 1px solid #ddd !important;
+	border-left: 1px solid #ddd !important;
+	border-bottom: none !important;
+}
+
+.ft-dashboard-tabs ul li.active a{
+	background-color: rgb(58, 150, 205) !important;
+	color: #fff !important;
+}
+
+
+
+
+.transaction-need{
+	font-size: 1.5em;
+}
+
+
+
+.need-amt{
+	font-size: 0.6em !important;
+	width: 200px;
+	background-color: rgb(233, 233, 233);
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	padding: 10px 10px;
+	margin: 0px 10px;
+	outline: none;
+}
+
+.need-country{
+	font-size: 0.6em !important;
+	outline: none;
+	width: 200px;
+}
+
+
+
+.limit-text{
+	font-size: 0.55em !important;
+	margin-left: 100px;
+}
+
+/********** Offer ***********/
+
+.transaction-offer{
+	font-size: 1.5em;
+
+}
+
+.offer-amt{
+	font-size: 0.6em !important;
+	width: 200px;
+	background-color: rgb(233, 233, 233);
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	padding: 10px 10px;
+	margin: 0px 15px;
+	outline: none;
+}
+
+
+
+
+/******** Options *********/
+
+.transaction-options-holder{
+	border-bottom: 1px solid rgb(184,184,184);
+}
+
+
+
+
+/******* Friends Dashboard *****/
+
+.friends-holder{
+	border: 1px solid blue;
+	height: 100px;
+}
+
+
+
+
+/*******************************************************************/
+/**************** Proposals That Might Interest you  **************/
+/*****************************************************************/
+
+
+
+.interest-proposals-wrapper{
+	/*border: 1px solid black;*/
+	margin: 25px 0;
+	padding: 30px 0;
+}
+
+.proposals-holder{
+	margin: 35px 0;
+}
+
+
+
+.frame-img{
+	height: 150px; 
+	width: 150px;
+	white-space: nowrap;
+	text-align: center;
+	overflow: hidden;
+	border: 3px solid #FFF;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+}
+
+.pr-frame-content{
+	width: 150px;
+	margin: 0 auto;
+}
+
+.pr-content-name p {
+	font-size: 1.25em;
+	margin: 5px 0 0px !important;
+}
+
+.pr-content-name p a:hover {
+	color: rgb(58, 150, 205) !important;
+	text-decoration: none;
+}
+
+
+
+.int-pro-img{
+	background: #3A6F9A;
+	vertical-align: middle;
+	max-width: 150px;
+	left: -3px;
+	position: relative;
+}
+
+.spnStarsClass{
+	color: #ffbe00;
+	border-color: #d49921;
+}
+
+.pr-finish{
+	margin: 0;
+}
+
+.pr-amt{
+	font-size: 2.5em;
+	margin: 0;
+}
+.pr-countries{
+	margin: -5px 0 0 ;
+}
+
+.pr-contact {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.pr-contact a{
+	margin-top: 5px; 
+	width: 80%;
+	background-color: rgb(58, 150, 205);
+	border-color: rgb(58, 150, 205);
+}
+
+.pr-contact a:hover{
+	background-color: rgb(58, 150, 205);
+	border-color: rgb(58, 150, 205);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
