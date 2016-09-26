@@ -49,21 +49,68 @@
                     <span class="icon-bar"></span>
                   </button>
 
-                  <a class="navbar-brand" href="#"><img class="logo"  src="images/logo.png"></a>
+                  <a class="navbar-brand" href="#"><img class="logo-dashboard"  src="images/logo.png"></a>
+                </div>
+
+
+                <div class="header-middle-container">
+                    <a class="middle-tab current" href=""> Proposals </a>
+                    <a class="middle-tab" href=""> Interactions </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
 
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">How it Works</a></li>
-                    <li><a href="#">Our Story</a></li>
+                    <li class="profile-dropdown">  
+                        <a href="#" class="dropdown-toggle dashboard-navbar-picture" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                            <img class="nav-profile-img" alt="Apredemy-avatar" src="http://res.cloudinary.com/drkw6qcjz/image/upload/v1473203960/yr4j5rbzexxevn0ogvji.jpg">
+                            <p class="in-line">Henry</p>
+                            <span class="caret ft-caret"></span>
+
+                            <div class="arrow-tip hide" data-section="arrow-tip" style=""></div>
+                        </a>
+
+                        <script type="text/javascript">
+                            $(document).ready(function(){
+                                $(".dropdown-toggle").click(function(){
+                                    $(".profile-box").toggleClass('hide show');
+                                    $(".arrow-tip").toggleClass('hide show');
+                                });
+                            });
+                        </script>
+
+                        <div class="profile-box hide" data-section="profile-box" style="">
+                            <div class="box-content">
+                                <a href="/profile/information" class="picture-big-link">
+                                    <img class="picture-big-navbar" src="https://static8.thumbtackstatic.com/pictures/15419/rgqhscalkrgg4ekhicbn60pkh_100.jpg">
+                                </a>
+                                <h3 class="box-name">Henry Sebastian Remache</h3>
+                                <a href="/profile/reviews" class="box-rating">
+                                    <span class="star-rating star-rating-large stars-5">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i> 
+                                    </span>
+                                    <span class="box-review-count"> (2 reviews)</span>
+                                </a>
+                            </div>
+                            <div class="box-footer profile-box-nav">
+                                <a class="GlobalHeader-profileLink" href="/profile/services/MXfn8$JbQi14ng/edit">Profile</a>
+                                <a href="/profile/settings">Settings</a>
+                                <a href="/logout">Log Out</a>
+                            </div>
+                        </div>
+
+                    </li>
                     
                   </ul>
                 </div><!-- /.navbar-collapse -->
+
+
+
               </div><!-- /.container-fluid -->
             </nav>
         </div>
@@ -72,69 +119,162 @@
         <div class="dashboard-wrapper">
             <!-- Propouse a transaction -->
             <div class="container">  
+                
                 <div class="main-dashboard-holder">
                     <div class="row">
                         <div class="col-md-8 ">
                             <div class="ft-dashboard-tabs">
                                 <ul class="nav nav-tabs nav-justified">
-                                  <li role="presentation" class="active"><a href="#">PROPOSE A TRANSACTION</a></li>
-                                  <li role="presentation"><a href="#">SEARCH PROPOSAL</a></li>
-                                  <li role="presentation"><a href="#">SEARCH PROFILE</a></li>
+                                  <li role="presentation" class="active"><a href="#propose" aria-controls="propose" role="tab" data-toggle="tab">PROPOSE A TRANSACTION</a></li>
+                                  <li role="presentation"><a href="#search-proposal" aria-controls="search-proposal" role="tab" data-toggle="tab">SEARCH PROPOSAL</a></li>
+                                  <li role="presentation"><a href="#search-profile" aria-controls="search-profile" role="tab" data-toggle="tab">SEARCH PROFILE</a></li>
                                 </ul>
                             </div>
 
-                            <div class="transactions-holder">
+
+
+
+                            <!-- Tabs Content -->
+                            <div class="tab-content">
                                 
-                                <div class="transaction-form">
-                                    <!-- I Need -->
-                                    <div class="transaction-need ft-grey">
+                                <!-- Propose Transaction  -->
+                                <div role="tabpanel" class="tab-pane active transactions-holder" id="propose">
+                                
+                                    <div class="transaction-form">
+                                        <!-- I Need -->
+                                        <div class="transaction-need ft-grey">
 
-                                        <span>I need</span>
+                                            <span>I need</span>
 
-                                        <input class="need-amt field-subject numeric" type="text" id="txtAmount" placeholder="Amount US$" >
-                                        
-                                        <span class="">In</span>
+                                            <input class="need-amt field-subject numeric" type="text" id="txtAmount" placeholder="Amount US$" >
+                                            
+                                            <span class="">In</span>
 
-                                        <label class="ft-label">
-                                            <span class=" custom-dropdown custom-dropdown--grey">
-                                                <select class="need-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryTo">
-                                                    <option value="1">USA</option>
-                                                    <option value="2">El Salvador</option>
-                                                    <option value="3">Panamá</option>
-                                                    <option value="4">Ecuador</option>
-                                                    <option value="5">Argentina</option>
-                                                    <option value="6">Australia</option>
-                                                    <option value="7">Brasil</option>
-                                                    <option value="8">Colombia</option>
-                                                    <option value="10">Peru</option>
-                                                    <option value="11">Uruguay</option>
-                                                    <option value="12">Venezuela</option>
-                                                    <option value="14">México</option>
-                                                    <option value="15">Bolivia</option>
-                                                </select>
-                                            </span>
-                                        </label>
+                                            <label class="ft-label">
+                                                <span class=" custom-dropdown custom-dropdown--grey">
+                                                    <select class="need-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryTo">
+                                                        <option value="1">USA</option>
+                                                        <option value="2">El Salvador</option>
+                                                        <option value="3">Panamá</option>
+                                                        <option value="4">Ecuador</option>
+                                                        <option value="5">Argentina</option>
+                                                        <option value="6">Australia</option>
+                                                        <option value="7">Brasil</option>
+                                                        <option value="8">Colombia</option>
+                                                        <option value="10">Peru</option>
+                                                        <option value="11">Uruguay</option>
+                                                        <option value="12">Venezuela</option>
+                                                        <option value="14">México</option>
+                                                        <option value="15">Bolivia</option>
+                                                    </select>
+                                                </span>
+                                            </label>
 
-                                       
-                                        <!-- Limit -->
-                                        <p class="limit-text ">
-                                            <span id="spnPTLimit" class="ft-blue">Your limit is: $ </span><span class="ft-blue" id="maxamount">4550.00</span> 
-                                            <img class="" src="images/help_20.png">
-                                        </p>
-                                    </div>
-
-                                    <!-- Transaction Offer -->
-                                    <div class="transaction-offer ft-grey">
-                                                                            
-                                        <span>I offer</span>
-                                    
-                                        <label class="offer-amt" id="spnAmountO" >Amount US$</label>
-
-                                        <span>In</span> 
                                            
-                                        <label class="ft-label">
-                                            <span class=" custom-dropdown custom-dropdown--grey">
-                                                <select class="need-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryFrom" >
+                                            <!-- Limit -->
+                                            <p class="limit-text ">
+                                                <span id="spnPTLimit" class="ft-blue">Your limit is: $ </span><span class="ft-blue" id="maxamount">4550.00</span> 
+                                                <img class="" src="images/help_20.png">
+                                            </p>
+                                        </div>
+
+                                        <!-- Transaction Offer -->
+                                        <div class="transaction-offer ft-grey">
+                                                                                
+                                            <span>I offer</span>
+                                        
+                                            <label class="offer-amt" id="spnAmountO" >Amount US$</label>
+
+                                            <span>In</span> 
+                                               
+                                            <label class="ft-label">
+                                                <span class=" custom-dropdown custom-dropdown--grey">
+                                                    <select class="need-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryFrom" >
+                                                        <option value="1">USA</option>
+                                                        <option value="2">El Salvador</option>
+                                                        <option value="3">Panamá</option>
+                                                        <option value="4">Ecuador</option>
+                                                        <option value="5">Argentina</option>
+                                                        <option value="6">Australia</option>
+                                                        <option value="7">Brasil</option>
+                                                        <option value="8">Colombia</option>
+                                                        <option value="10">Peru</option>
+                                                        <option value="11">Uruguay</option>
+                                                        <option value="12">Venezuela</option>
+                                                        <option value="14">México</option>
+                                                        <option value="15">Bolivia</option>
+                                                    </select>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <span class="ft-grey">When do you need the money?</span>
+
+                                    <!-- Options -->
+                                    
+                                    <div class="transaction-options-holder">
+                                        <label class="ft-grey"><input id="rbdDateNO" name="rbdDateNeeded" type="radio" value="0" checked="">  <span id="spnPTSoon">As soon as possible</span></label>
+                                                           
+                                        <label class="ft-grey"><input id="rbdDateYES" name="rbdDateNeeded" type="radio" value="1"> <span id="spnPTSpecific">Specific date</span></label>
+                                        
+                                        <div class="proposal-dates row">
+                                            <div class="col-sm-4">
+                                                <input id="rdbBefore" type="radio" name="Moment" value="1" checked="checked">
+                                                <span id="spnPTBefore">Before</span>
+                                            <br>
+                                                <input id="rdbAfter" type="radio" name="Moment" value="2">
+                                                <span id="spnPTAfter">After</span>
+                                            <br>
+                                                <input id="rdbAround" type="radio" name="Moment" value="3">
+                                                <span id="spnPTAround">Around</span>
+                                            <br>
+                                                <input id="rdbExactly" type="radio" name="Moment" value="4">
+                                                <span id="spnPTExactly">Exactly</span>
+                                            </div>
+
+                                            <div class="col-sm-8">
+                                                <input class="dates field-subject hasDatepicker" type="text" id="txtNeededDate" placeholder="Select date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <script type="text/javascript">
+
+                                        //el div de fecha especifica sale oculto.
+                                        $('.proposal-dates').hide();
+
+                                        $("#rbdDateYES").bind("change", function () {
+                                            $('.proposal-dates').show();
+                                        });
+
+                                        $("#rbdDateNO").bind("change", function () {
+                                            $('.proposal-dates').hide();
+                                        });
+
+                                    </script>
+
+                                    <!-- Calculador -->
+
+                                    <p>Need to calculate this amount of USD in your local currency? <a href="">Check Now</a></p>
+
+                                    <div class="center">
+                                        <input  value="MAKE A PROPOSAL!" class="proposal-btn btn bnt-large ft-blue-bg white btn-submit">
+                                    </div>
+                                </div>
+
+                                <!-- Search a Proposal -->
+                                <div role="tabpanel" class="tab-pane" id="search-proposal">
+                                    <fieldset id="flsSearchRequest">
+                                    
+                                        <div class="">
+                                            <div class="row-item">
+                                                <h5 id="h5SRTitleFind">FIND A MATCH FOR YOUR NEED</h5>
+
+                                                <span id="spnSRWhereIsMoney">Where is your money now? </span>
+                                                <br>
+                                                <select class="textarea-wrap" id="slcCountryFrom">
                                                     <option value="1">USA</option>
                                                     <option value="2">El Salvador</option>
                                                     <option value="3">Panamá</option>
@@ -149,65 +289,62 @@
                                                     <option value="14">México</option>
                                                     <option value="15">Bolivia</option>
                                                 </select>
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                                
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="">
+                                            <div class="row-item">
 
-                                <span class="ft-grey">When do you need the money?</span>
+                                                <span id="spnSRWhereF">Where do you need it?</span>
+                                                <br>
+                                                <select class="textarea-wrap" id="slcCountryTo">
+                                                    <option value="1">USA</option>
+                                                    <option value="2">El Salvador</option>
+                                                    <option value="3">Panamá</option>
+                                                    <option value="4">Ecuador</option>
+                                                    <option value="5">Argentina</option>
+                                                    <option value="6">Australia</option>
+                                                    <option value="7">Brasil</option>
+                                                    <option value="8">Colombia</option>
+                                                    <option value="10">Peru</option>
+                                                    <option value="11">Uruguay</option>
+                                                    <option value="12">Venezuela</option>
+                                                    <option value="14">México</option>
+                                                    <option value="15">Bolivia</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="">
+                                            <div class="row-item">
+                                                <span id="spnSRAmountF">Amount US$ : </span>
+                                                <br>
+                                                <input id="txtAmount" class="field-subject" type="text"><br>
+                                                <br>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="row-item">
+                                                <label><input id="chkHigher" type="checkbox"><span id="spnSRHigher">Show also proposals with higher amounts</span></label><br>
+                                                
+                                                   <a id="hrfSearch" class="btn-submit btn colored">Search</a>
 
-                                <!-- Options -->
-                                
-                                <div class="transaction-options-holder">
-                                    <label class="ft-grey"><input id="rbdDateNO" name="rbdDateNeeded" type="radio" value="0" checked="">  <span id="spnPTSoon">As soon as possible</span></label>
-                                                       
-                                    <label class="ft-grey"><input id="rbdDateYES" name="rbdDateNeeded" type="radio" value="1"> <span id="spnPTSpecific">Specific date</span></label>
-                                    
-                                    <div class="proposal-dates">
-                                        <div>
-                                            <input id="rdbBefore" type="radio" name="Moment" value="1" checked="checked">
-                                            <span id="spnPTBefore">Before</span>
-                                        <br>
-                                            <input id="rdbAfter" type="radio" name="Moment" value="2">
-                                            <span id="spnPTAfter">After</span>
-                                        <br>
-                                            <input id="rdbAround" type="radio" name="Moment" value="3">
-                                            <span id="spnPTAround">Around</span>
-                                        <br>
-                                            <input id="rdbExactly" type="radio" name="Moment" value="4">
-                                            <span id="spnPTExactly">Exactly</span>
+                                            </div>
                                         </div>
 
-                                        <div >
-                                            <input class="dates field-subject hasDatepicker" type="text" id="txtNeededDate" placeholder="Select date">
-                                        </div>
-                                    </div>
+                                    </fieldset>
                                 </div>
-
-                                <script type="text/javascript">
-
-                                    //el div de fecha especifica sale oculto.
-                                    $('.proposal-dates').hide();
-
-                                    $("#rbdDateYES").bind("change", function () {
-                                        $('.proposal-dates').show();
-                                    });
-
-                                    $("#rbdDateNO").bind("change", function () {
-                                        $('.proposal-dates').hide();
-                                    });
-
-                                </script>
-
-                                <!-- Calculador -->
-
-                                <p>Need to calculate this amount of USD in your local currency? <a href="">Check Now</a></p>
-
-                                <div class="center">
-                                    <input  value="MAKE A PROPOSAL!" class="proposal-btn btn bnt-large ft-blue-bg white btn-submit">
+                                <div role="tabpanel" class="tab-pane" id="search-profile">
+                                    <p>Awesome</p>
                                 </div>
                             </div>
+
+
+                            
+
+
+
+
                         </div>
 
                         <div class="col-md-4 friends-holder">
@@ -246,6 +383,11 @@
                         </div>
                     </div>
                 </div>
+
+
+
+                
+
             </div>
 
 
