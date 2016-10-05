@@ -1,13 +1,39 @@
 /******* Dashboard Nav Bar **********/
 .dashboard-navbar nav{
 	border-radius: 0px !important;
-	height: 65px;
+	min-height: 65px;
 	padding: 0 20px;
+}
+
+.logo-dashboard-holder{
+	float: none !important;
+	margin: 0 auto !important;
+	display: block;
 }
 
 .logo-dashboard{
 	width: 160px;
-	margin-top: -10px;
+	margin: -10px auto 0 auto;
+}
+
+.ft-navbar-desktop {
+	display: none;
+}
+
+.ft-navtabs-mobile{
+	width: 100% !important;
+}
+
+.ft-navtabs-mobile li{
+	width: 33.33% !important;
+	display: inline-block;
+	overflow-x: hidden;
+	float: left !important;
+}
+
+.ft-navtabs-mobile li a {
+	font-size: 0.7em;
+	margin-bottom: 0px !important;
 }
 
 
@@ -166,10 +192,23 @@ li.profile-dropdown.open a {
 
 
 
-/*************************/
+/*************************************************************************/
+/*************************** Main Dashboard *****************************/
+/***********************************************************************/
+
+
+.dashboard-wrapper{
+	margin-top: 50px;
+}
+
+.transaction-form {
+	margin-bottom: 25px;
+}
 
 
 
+
+/*********** DROPDOWN FIX **************/
 
 
 .custom-dropdown--large {
@@ -183,12 +222,12 @@ li.profile-dropdown.open a {
 .custom-dropdown__select{
 	font-size: inherit; /* inherit size from .custom-dropdown */
 	padding: 10px;
-	/*margin-top: -15px;*/
 }
 
 .custom-dropdown__select--grey {
 	background-color: rgb(233, 233, 233);
-	color: rgba(167, 167, 167, 0.6);  
+	color: rgb(60, 73, 93) ;  
+
 }
 
 @supports (pointer-events: none) and
@@ -262,20 +301,12 @@ li.profile-dropdown.open a {
 	}
 }
 
-/* Mian Dashboard */
-.dashboard-wrapper{
-	margin-top: 50px;
-}
 
-.transaction-form {
-	margin-bottom: 25px;
-}
-
-/******* Transaction ******/
+/******* Propose Transaction ******/
 
 .transactions-holder{
 	border: 1px solid #ddd;
-	padding: 75px !important;
+	padding: 15px !important;
 }
 
 .ft-dashboard-tabs ul li a{
@@ -290,15 +321,20 @@ li.profile-dropdown.open a {
 	color: #fff !important;
 }
 
-
-
-
 .transaction-need{
 	font-size: 1.5em;
-	text-align: center;
+}
+
+.transaction-p-fix{
+	width: 60px;
+}
+
+.transaction-in-fix{
+	width: 60px;
 }
 
 
+/**** Need-Amt ********/
 
 .need-amt{
 	font-size: 0.6em !important;
@@ -308,17 +344,42 @@ li.profile-dropdown.open a {
 	text-align: center;
 	border-radius: 5px;
 	padding: 10px 10px;
-	margin: 0px 10px;
+	margin: 0px;
 	outline: none;
+	color: rgb(60, 73, 93) !important;
+	font-weight: bold;
 }
+
+.need-amt::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: rgb(60, 73, 93) !important;
+}
+.need-amt::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: rgb(60, 73, 93) !important;
+    opacity:  1;
+}
+.need-amt::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: rgb(60, 73, 93) !important;
+   	opacity:  1;
+}
+.need-amt::-ms-input-placeholder { 
+	color: rgb(60, 73, 93) !important;
+}
+
+.need-amt::-ms-placeholder {
+	color: rgb(60, 73, 93) !important;
+}
+
+.need-amt::placeholder { 
+	color: rgb(60, 73, 93) !important;
+}
+
+
 
 .need-country{
 	font-size: 0.6em !important;
 	outline: none;
-	width: 200px;
+	width: 150px;
 }
-
-
 
 .limit-text{
 	font-size: 0.55em !important;
@@ -326,15 +387,10 @@ li.profile-dropdown.open a {
 	text-align: left;
 }
 
-
-
-
-
 /********** Offer ***********/
 
 .transaction-offer{
 	font-size: 1.5em;
-	text-align: center;
 }
 
 .offer-amt{
@@ -345,12 +401,9 @@ li.profile-dropdown.open a {
 	text-align: center;
 	border-radius: 5px;
 	padding: 10px 10px;
-	margin: 0px 15px;
+	margin: 0px;
 	outline: none;
 }
-
-
-
 
 /******** Options *********/
 
@@ -369,10 +422,59 @@ li.profile-dropdown.open a {
 }
 
 
-/******* Friends Dashboard *****/
+
+/*************************************************************************/
+/************************** Search Proposal *****************************/
+/***********************************************************************/
+
+
+.search-transaction-holder{
+	border: 1px solid #ddd;
+	padding: 75px !important;
+}
+
+.search-transaction-tag{
+	width: 200px;
+	margin: 15px 0; 
+}
+
+.search-transaction-country{
+	font-size: 1em !important;
+    outline: none;
+    width: 200px;
+    font-weight: bold;
+}
+
+.search-transaction-amt {
+    font-size: 1em !important;
+    width: 200px;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 0px 0px;
+    outline: none;
+}
+
+
+/*************************************************************************/
+/************************** Search Profile ******************************/
+/***********************************************************************/
+
+.search-profile-holder {
+	border: 1px solid #ddd;
+	padding: 75px !important;
+}
+
+
+/******************************************************************/
+/************************ Friends Dashboard **********************/
+/****************************************************************/
 
 .friends-holder{
 	border-left: 1px dashed #ddd;
+	display: none;
 }
 
 .selfProfile{
@@ -455,8 +557,6 @@ li.profile-dropdown.open a {
 /**************** Proposals That Might Interest you  **************/
 /*****************************************************************/
 
-
-
 .interest-proposals-wrapper{
 	/*border: 1px solid black;*/
 	margin: 25px 0;
@@ -466,8 +566,6 @@ li.profile-dropdown.open a {
 .proposals-holder{
 	margin: 35px 0;
 }
-
-
 
 .frame-img{
 	height: 150px; 
@@ -494,8 +592,6 @@ li.profile-dropdown.open a {
 	color: rgb(58, 150, 205) !important;
 	text-decoration: none;
 }
-
-
 
 .int-pro-img{
 	background: #3A6F9A;
@@ -539,8 +635,98 @@ li.profile-dropdown.open a {
 	border-color: rgb(58, 150, 205);
 }
 
-
 /*******************************************/
+
+
+/******************************************************************************/
+/******************************** Media Queries ******************************/
+/****************************************************************************/
+
+
+/* Smartphones  ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 768px)  {
+
+	/* NavBar */
+	.logo-dashboard-holder{
+		float: left;
+	}
+
+	.ft-navtabs-mobile{
+		display: none;
+	}
+	.ft-navbar-desktop {
+		display: block;
+	}
+
+	.ft-navbar-mobile{
+		display: none;
+	}
+
+	/* Transaction Holder */
+	.transactions-holder{
+		padding: 75px !important;
+	}
+
+
+	.need-country{
+		width: 200px;
+	}
+
+	.transaction-form-fix{
+		display: inline-block;
+	}
+
+	.transaction-in-fix{
+		width: 60px;
+		text-align: center;
+	}
+}
+
+/*Small Fix*/
+
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 992px)  {
+
+	/* Friends holder */
+	.friends-holder{
+		display: block;
+	}
+
+	.transaction-in-fix{
+		text-align: center;
+	}
+
+	.main-dashboard-holder{
+		text-align: center;
+	}
+
+
+
+}
+
+
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+
 
 
 

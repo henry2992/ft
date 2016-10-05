@@ -66,6 +66,10 @@ h1, h2, h3, h4, h5, h6 {
 	display: none;
 }
 
+.ft-block-mobile{
+	display: block;
+}
+
 .bold {
 	font-weight: bold;
 }
@@ -521,6 +525,8 @@ h1, h2, h3, h4, h5, h6 {
 	.ft-mobile {
 		display: block;
 	}
+
+	.ft-block-mobile{ display: inline-block; }
 
 	.ft-main-title {
 		font-size: 3em;
