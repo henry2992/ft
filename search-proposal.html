@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="css/global-inner.css"> 
 
         <!-- Dashboard Styles -->
-        <link rel="stylesheet" type="text/css" href="css/dashboard.css">        
+        <link rel="stylesheet" type="text/css" href="css/search-proposals.css">        
 
 
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -29,17 +29,14 @@
 
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/typed.js"></script>
-
- 
-        
+   
 
     </head>
 
     <body>
 
         <div class="dashboard-navbar">
-            <nav class="navbar navbar-default ">
+            <nav class="navbar navbar-default nav-ft ">
               <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -117,282 +114,16 @@
         </div>
 
 
-        <div class="dashboard-wrapper">
-            <!-- Propouse a transaction -->
-            <div class="container">  
-                
-                <div class="main-dashboard-holder">
-                    <div class="row">
-                        <div class="col-md-8 ">
-                            <div class="ft-dashboard-tabs">
-                                <ul class="nav nav-tabs nav-justified">
-                                  <li role="presentation" class="active"><a href="#propose" aria-controls="propose" role="tab" data-toggle="tab">PROPOSE A TRANSACTION</a></li>
-                                  <li role="presentation"><a href="#search-proposal" aria-controls="search-proposal" role="tab" data-toggle="tab">SEARCH PROPOSAL</a></li>
-                                  <li role="presentation"><a href="#search-profile" aria-controls="search-profile" role="tab" data-toggle="tab">SEARCH PROFILE</a></li>
-                                </ul>
-                            </div>
-
-
-
-
-                            <!-- Tabs Content -->
-                            <div class="tab-content">
-                                
-                                <!-- Propose Transaction  -->
-                                <div role="tabpanel" class="tab-pane active transactions-holder" id="propose">
-                                
-                                    <div class="transaction-form">
-                                        <!-- I Need -->
-                                        <div class="transaction-need ft-grey">
-
-                                            <span>I need</span>
-
-                                            <input class="need-amt field-subject numeric" type="text" id="txtAmount" placeholder="Amount US$" >
-                                            
-                                            <span class="">In</span>
-
-                                            <label class="ft-label">
-                                                <span class=" custom-dropdown custom-dropdown--grey">
-                                                    <select class="need-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryTo">
-                                                        <option value="1">USA</option>
-                                                        <option value="2">El Salvador</option>
-                                                        <option value="3">Panamá</option>
-                                                        <option value="4">Ecuador</option>
-                                                        <option value="5">Argentina</option>
-                                                        <option value="6">Australia</option>
-                                                        <option value="7">Brasil</option>
-                                                        <option value="8">Colombia</option>
-                                                        <option value="10">Peru</option>
-                                                        <option value="11">Uruguay</option>
-                                                        <option value="12">Venezuela</option>
-                                                        <option value="14">México</option>
-                                                        <option value="15">Bolivia</option>
-                                                    </select>
-                                                </span>
-                                            </label>
-
-                                           
-                                            <!-- Limit -->
-                                            <p class="limit-text ">
-                                                <span id="spnPTLimit" class="ft-blue">Your limit is: $ </span><span class="ft-blue" id="maxamount">4550.00</span> 
-                                                <img class="" src="images/help_20.png">
-                                            </p>
-                                        </div>
-
-                                        <!-- Transaction Offer -->
-                                        <div class="transaction-offer ft-grey">
-                                                                                
-                                            <span>I offer</span>
-                                        
-                                            <label class="offer-amt" id="spnAmountO" >Amount US$</label>
-
-                                            <span>In</span> 
-                                               
-                                            <label class="ft-label">
-                                                <span class=" custom-dropdown custom-dropdown--grey">
-                                                    <select class="need-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryFrom" >
-                                                        <option value="1">USA</option>
-                                                        <option value="2">El Salvador</option>
-                                                        <option value="3">Panamá</option>
-                                                        <option value="4">Ecuador</option>
-                                                        <option value="5">Argentina</option>
-                                                        <option value="6">Australia</option>
-                                                        <option value="7">Brasil</option>
-                                                        <option value="8">Colombia</option>
-                                                        <option value="10">Peru</option>
-                                                        <option value="11">Uruguay</option>
-                                                        <option value="12">Venezuela</option>
-                                                        <option value="14">México</option>
-                                                        <option value="15">Bolivia</option>
-                                                    </select>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    
-
-                                    <span class="ft-grey">When do you need the money?</span>
-
-                                    <!-- Options -->
-                                    
-                                    <div class="transaction-options-holder">
-                                        <label class="ft-grey"><input id="rbdDateNO" name="rbdDateNeeded" type="radio" value="0" checked="">  <span id="spnPTSoon">As soon as possible</span></label>
-                                                           
-                                        <label class="ft-grey"><input id="rbdDateYES" name="rbdDateNeeded" type="radio" value="1"> <span id="spnPTSpecific">Specific date</span></label>
-                                        
-                                        <div class="proposal-dates row">
-                                            <div class="col-sm-4">
-                                                <input id="rdbBefore" type="radio" name="Moment" value="1" checked="checked">
-                                                <span id="spnPTBefore">Before</span>
-                                            <br>
-                                                <input id="rdbAfter" type="radio" name="Moment" value="2">
-                                                <span id="spnPTAfter">After</span>
-                                            <br>
-                                                <input id="rdbAround" type="radio" name="Moment" value="3">
-                                                <span id="spnPTAround">Around</span>
-                                            <br>
-                                                <input id="rdbExactly" type="radio" name="Moment" value="4">
-                                                <span id="spnPTExactly">Exactly</span>
-                                            </div>
-
-                                            <div class="col-sm-8">
-                                                <input class="dates field-subject hasDatepicker" type="text" id="txtNeededDate" placeholder="Select date">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <script type="text/javascript">
-
-                                        //el div de fecha especifica sale oculto.
-                                        $('.proposal-dates').hide();
-
-                                        $("#rbdDateYES").bind("change", function () {
-                                            $('.proposal-dates').show();
-                                        });
-
-                                        $("#rbdDateNO").bind("change", function () {
-                                            $('.proposal-dates').hide();
-                                        });
-
-                                    </script>
-
-                                    <!-- Calculador -->
-
-                                    <p>Need to calculate this amount of USD in your local currency? <a href="">Check Now</a></p>
-
-                                    <div class="center">
-                                        <input  value="MAKE A PROPOSAL!" class="proposal-btn btn bnt-large ft-blue-bg white btn-submit">
-                                    </div>
-                                </div>
-
-                                <!-- Search a Proposal -->
-                                <div role="tabpanel" class="tab-pane" id="search-proposal">
-                                    <fieldset id="flsSearchRequest">
-                                    
-                                        <div class="">
-                                            <div class="row-item">
-                                                <h5 id="h5SRTitleFind">FIND A MATCH FOR YOUR NEED</h5>
-
-                                                <span id="spnSRWhereIsMoney">Where is your money now? </span>
-                                                <br>
-                                                <select class="textarea-wrap" id="slcCountryFrom">
-                                                    <option value="1">USA</option>
-                                                    <option value="2">El Salvador</option>
-                                                    <option value="3">Panamá</option>
-                                                    <option value="4">Ecuador</option>
-                                                    <option value="5">Argentina</option>
-                                                    <option value="6">Australia</option>
-                                                    <option value="7">Brasil</option>
-                                                    <option value="8">Colombia</option>
-                                                    <option value="10">Peru</option>
-                                                    <option value="11">Uruguay</option>
-                                                    <option value="12">Venezuela</option>
-                                                    <option value="14">México</option>
-                                                    <option value="15">Bolivia</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="">
-                                            <div class="row-item">
-
-                                                <span id="spnSRWhereF">Where do you need it?</span>
-                                                <br>
-                                                <select class="textarea-wrap" id="slcCountryTo">
-                                                    <option value="1">USA</option>
-                                                    <option value="2">El Salvador</option>
-                                                    <option value="3">Panamá</option>
-                                                    <option value="4">Ecuador</option>
-                                                    <option value="5">Argentina</option>
-                                                    <option value="6">Australia</option>
-                                                    <option value="7">Brasil</option>
-                                                    <option value="8">Colombia</option>
-                                                    <option value="10">Peru</option>
-                                                    <option value="11">Uruguay</option>
-                                                    <option value="12">Venezuela</option>
-                                                    <option value="14">México</option>
-                                                    <option value="15">Bolivia</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="">
-                                            <div class="row-item">
-                                                <span id="spnSRAmountF">Amount US$ : </span>
-                                                <br>
-                                                <input id="txtAmount" class="field-subject" type="text"><br>
-                                                <br>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <div class="row-item">
-                                                <label><input id="chkHigher" type="checkbox"><span id="spnSRHigher">Show also proposals with higher amounts</span></label><br>
-                                                
-                                                   <a id="hrfSearch" class="btn-submit btn colored">Search</a>
-
-                                            </div>
-                                        </div>
-
-                                    </fieldset>
-                                </div>
-                                <div role="tabpanel" class="tab-pane" id="search-profile">
-                                    <p>Awesome</p>
-                                </div>
-                            </div>
-
-
-                            
-
-
-
-
-                        </div>
-
-                        <div class="col-md-4 friends-holder">
-                            <div>
-
-                                <a href=""><img src="images/myuser.jpg" class="selfProfile"></a>
-                                
-                                <!-- Categories List -->
-                                <a href="" class="profile-name"><h3 class=" uppercase ">Henry Sebastián Remache</h3></a>
-                                
-                                <p>Chicago, Illinois</p>
-                                <p>Your profile is 30% complete</p>
-                                <div class="ft-profile-progress progress">
-                                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                    <span class="sr-only">20% Complete</span>
-                                  </div>
-                                </div>
-                                <a href="" rel="nofollow"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit Profile</a>
-                                <p>Improve your profile to secure better matches</p>
-
-                                <!-- End Categories List -->
-                                
-                                <div>
-                                    <h3 class="profile-friends ft-blue center"> YOUR FRIENDS ON FRIENDLY TRANSFER </h3>
-
-                                    <div class="profile-fb-friends center">
-                                        <ul>
-                                            <li><img src="images/ref-user1.jpg"></li>
-                                            <li><img src="images/ref-user2.jpg"></li>
-                                            <li><img src="images/ref-user3.jpg"></li>
-                                        </ul>
-                                        <p class="pull-right"><a> See more </a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
+        <div class="search-proposals-wrapper">
+            
             <!-- Proposals That Might Interest you -->
             <div class="container">
                 <div class=" interest-proposals-wrapper ">
                     
-                    <h1 class="ft-blue uppercase center">Proposals that may interest you</h1>
+                    <div class="sp-title-holder">
+                        <h1 class="ft-blue uppercase search-proposal-title">Search Proposals</h1>
+                        <a href="" class="btn btn-primary white new-search-btn">New Search</a>
+                    </div>
 
                     <div class="row proposals-holder">
                         
@@ -400,7 +131,6 @@
                             <div class="frame-img">
                                 <img src="images/ref-user1.jpg" class="int-pro-img">
                             </div>
-
                             <div class="pr-frame-content">
                                 <div class="pr-content-name">
                                     <p class="ft-blue"><a href="">Ivan Viteri</a></p>  
@@ -418,6 +148,8 @@
                                 </div>
 
                                 <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="ft-dark-grey"> 10 mutual friends </p>
+
                                 <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
                                 <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
 
@@ -449,6 +181,7 @@
                                 </div>
 
                                 <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="ft-dark-grey"> 10 mutual friends </p>
                                 <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
                                 <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
 
@@ -480,6 +213,7 @@
                                 </div>
 
                                 <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="ft-dark-grey"> 10 mutual friends </p>
                                 <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
                                 <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
 
@@ -511,6 +245,7 @@
                                 </div>
 
                                 <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="ft-dark-grey"> 10 mutual friends </p>
                                 <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
                                 <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
 
@@ -545,6 +280,7 @@
                                 </div>
 
                                 <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="ft-dark-grey"> 10 mutual friends </p>
                                 <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
                                 <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
 
@@ -576,6 +312,7 @@
                                 </div>
 
                                 <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="ft-dark-grey"> 10 mutual friends </p>
                                 <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
                                 <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
 
@@ -607,6 +344,7 @@
                                 </div>
 
                                 <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="ft-dark-grey"> 10 mutual friends </p>
                                 <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
                                 <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
 
@@ -638,6 +376,7 @@
                                 </div>
 
                                 <p class="pr-finish ft-dark-grey"> 6 finished transactions </p>
+                                <p class="ft-dark-grey"> 10 mutual friends </p>
                                 <p class="pr-amt ft-blue center"><span>$</span><span>300</span></p>
                                 <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
 
@@ -647,21 +386,8 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
-            
-        </div>
-
-
-
-
-
-
-
-
-        
+        </div>        
     </body>
 </html>

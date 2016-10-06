@@ -1,0 +1,60 @@
+.sp-title-holder{
+	text-align: center;
+}
+
+
+.search-proposal-title {
+	font-size: 25px;
+}
+
+.new-search-btn{
+	margin-top: 30px;
+	background-color: rgb(58, 150, 205) !important;
+	border-color: rgb(58, 150, 205) !important;
+	padding: 10px 35px !important;
+}
+
+
+
+/******************************************************************************/
+/******************************** Media Queries ******************************/
+/****************************************************************************/
+
+
+/* Smartphones  ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 768px)  {
+
+	.search-proposal-title {
+		font-size: 36px;
+	}
+
+	.new-search-btn{
+		float: right;
+		margin-top: -35px;
+		background-color: rgb(58, 150, 205) !important;
+		border-color: rgb(58, 150, 205) !important;
+		padding: 10px 35px !important;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+	\
+
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+
+
