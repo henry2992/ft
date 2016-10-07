@@ -36,7 +36,7 @@
     <body>
 
         <div class="dashboard-navbar">
-            <nav class="navbar navbar-default nav-ft ">
+            <nav class="navbar navbar-default navbar-static-top nav-ft">
               <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -47,68 +47,88 @@
                     <span class="icon-bar"></span>
                   </button>
 
-                  <a class="navbar-brand" href="#"><img class="logo-dashboard"  src="images/logo.png"></a>
+                  <a class="navbar-brand logo-dashboard-holder" href="#"><img class="logo-dashboard"  src="images/logo.png"></a>
                 </div>
 
-
-                <div class="header-middle-container">
-                    <a class="middle-tab current" href=""> Proposals </a>
-                    <a class="middle-tab" href=""> Interactions </a>
+                <!-- Navbar for Mobiles -->
+                <div class="ft-navbar-mobile">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li> 
+                        <li><a href="#">Link</a></li>
+                    </div><!-- /.navbar-collapse -->
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
+                <!-- Navbar for Desktops -->
+                <div class="ft-navbar-desktop">
+                    <div class="header-middle-container">
 
-                    <li class="profile-dropdown">  
-                        <a href="#" class="dropdown-toggle dashboard-navbar-picture" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
-                            <img class="nav-profile-img" alt="Apredemy-avatar" src="http://res.cloudinary.com/drkw6qcjz/image/upload/v1473203960/yr4j5rbzexxevn0ogvji.jpg">
-                            <p class="in-line">Henry</p>
-                            <span class="caret ft-caret"></span>
+                        <li class="dropdown in-line">
+                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proposals<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">In Progress</a></li>
+                            <li><a href="#">Archived</a></li>
+                          </ul>
+                        </li>
 
-                            <div class="arrow-tip hide" data-section="arrow-tip" style=""></div>
-                        </a>
+                        <li class="dropdown in-line">
+                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interactions<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">In Progress</a></li>
+                            <li><a href="#">Archived</a></li>
+                          </ul>
+                        </li>
 
-                        <script type="text/javascript">
-                            $(document).ready(function(){
-                                $(".dropdown-toggle").click(function(){
-                                    $(".profile-box").toggleClass('hide show');
-                                    $(".arrow-tip").toggleClass('hide show');
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div >
+                      <ul class="nav navbar-nav navbar-right">
+                        <li class="profile-dropdown">  
+                            <a href="#" class="dropdown-toggle dashboard-navbar-picture" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                <img class="nav-profile-img" alt="Apredemy-avatar" src="http://res.cloudinary.com/drkw6qcjz/image/upload/v1473203960/yr4j5rbzexxevn0ogvji.jpg">
+                                <p class="in-line">Henry</p>
+                                <span class="caret ft-caret"></span>
+
+                                <div class="arrow-tip hide" data-section="arrow-tip" style=""></div>
+                            </a>
+
+                            <script type="text/javascript">
+                                $(document).ready(function(){
+                                    $(".dashboard-navbar-picture").click(function(){
+                                        $(".profile-box").toggleClass('hide show');
+                                        $(".arrow-tip").toggleClass('hide show');
+                                    });
                                 });
-                            });
-                        </script>
+                            </script>
 
-                        <div class="profile-box hide" data-section="profile-box" style="">
-                            <div class="box-content">
-                                <a href="/profile/information" class="picture-big-link">
-                                    <img class="picture-big-navbar" src="https://static8.thumbtackstatic.com/pictures/15419/rgqhscalkrgg4ekhicbn60pkh_100.jpg">
-                                </a>
-                                <h3 class="box-name">Henry Sebastian Remache</h3>
-                                <a href="/profile/reviews" class="box-rating">
-                                    <span class="star-rating star-rating-large stars-5">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half-o"></i> 
-                                    </span>
-                                    <span class="box-review-count"> (2 reviews)</span>
-                                </a>
+                            <div class="profile-box hide" data-section="profile-box" style="">
+                                <div class="box-content">
+                                    <a href="/profile/information" class="picture-big-link">
+                                        <img class="picture-big-navbar" src="https://static8.thumbtackstatic.com/pictures/15419/rgqhscalkrgg4ekhicbn60pkh_100.jpg">
+                                    </a>
+                                    <h3 class="box-name">Henry Sebastian Remache</h3>
+                                    <a href="/profile/reviews" class="box-rating">
+                                        <span class="star-rating star-rating-large stars-5">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i> 
+                                        </span>
+                                        <span class="box-review-count"> (2 reviews)</span>
+                                    </a>
+                                </div>
+                                <div class="box-footer profile-box-nav">
+                                    <a class="GlobalHeader-profileLink" href="/profile/services/MXfn8$JbQi14ng/edit">Profile</a>
+                                    <a href="/profile/settings">Settings</a>
+                                    <a href="/logout">Log Out</a>
+                                </div>
                             </div>
-                            <div class="box-footer profile-box-nav">
-                                <a class="GlobalHeader-profileLink" href="/profile/services/MXfn8$JbQi14ng/edit">Profile</a>
-                                <a href="/profile/settings">Settings</a>
-                                <a href="/logout">Log Out</a>
-                            </div>
-                        </div>
-
-                    </li>
-                    
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-
-
-
+                        </li>   
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
               </div><!-- /.container-fluid -->
             </nav>
         </div>
@@ -127,7 +147,7 @@
 
                     <div class="row proposals-holder">
                         
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 frame">
                             <div class="frame-img">
                                 <img src="images/ref-user1.jpg" class="int-pro-img">
                             </div>
@@ -159,7 +179,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 frame">
                             <div class="frame-img">
                                 <img src="images/ref-user2.jpg" class="int-pro-img">
                             </div>
@@ -191,7 +211,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 frame">
                             <div class="frame-img">
                                 <img src="images/ref-user3.jpg" class="int-pro-img">
                             </div>
@@ -223,7 +243,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 frame">
                             <div class="frame-img">
                                 <img src="images/ref-user4.jpg" class="int-pro-img">
                             </div>
@@ -258,8 +278,8 @@
 
                     <div class="row proposals-holder">
                         
-                        <div class="col-sm-3">
-                            <div class="frame-img">
+                        <div class="col-sm-3 frame">
+                            <div class="frame-img ">
                                 <img src="images/ref-user1.jpg" class="int-pro-img">
                             </div>
 
@@ -290,7 +310,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 frame">
                             <div class="frame-img">
                                 <img src="images/ref-user2.jpg" class="int-pro-img">
                             </div>
@@ -322,7 +342,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 frame">
                             <div class="frame-img">
                                 <img src="images/ref-user3.jpg" class="int-pro-img">
                             </div>
@@ -354,7 +374,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 frame">
                             <div class="frame-img">
                                 <img src="images/ref-user4.jpg" class="int-pro-img">
                             </div>

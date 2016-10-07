@@ -1,0 +1,149 @@
+.profile-wrapper {
+	background-color: rgb(249, 247, 248);
+	padding: 30px 0;
+	margin-bottom: 25px;
+}
+
+.profile-message-img{
+	width: 100px;
+}
+
+
+/************************************************************/
+/************************ Messages *************************/
+/**********************************************************/
+
+.messages-wrapper{
+	padding: 50px 0;
+}
+
+.messages-holder{
+	border: 1px solid rgb(183, 183, 183);
+	background-color: rgb(249, 247, 248);
+	padding: 50px 35px;
+}
+
+.messages-title{
+	font-size: 25px;
+	margin-bottom: 20px !important;
+}
+
+
+.message-complete{
+	border-bottom: 1px solid rgb(185,184,186);
+	margin-bottom: 50px;
+}
+
+/*.messages-holder div:last-child {
+    border-bottom: none !important;
+}*/
+
+
+.message-info-holder{
+	height: 60px;
+	margin-bottom: 10px;
+}
+
+.message-sender{
+	float: right;
+}
+
+.message-date{
+	float: right;
+	font-size: 14px;
+	margin: 0 !important;
+}
+
+
+.message-sender-img{
+	width: 25px;
+	border-radius: 50%;
+}
+
+.message-complete p {
+	margin-bottom: 25px;
+}
+
+
+
+/********* Reply **********/
+
+.file-messages{
+	width: 200px;
+	overflow: hidden;
+}
+
+.messages-reply{
+	margin-top: 25px;
+}
+
+/*BTNS*/
+
+.messages-btn-holder{
+	margin-top: 10px;
+}
+
+.message-btn{
+	width: 200px;
+	margin-top: 20px;
+}
+
+
+
+
+/******************************************************************************/
+/******************************** Media Queries ******************************/
+/****************************************************************************/
+
+
+/* Smartphones  ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 768px)  {
+	.messages-title{
+		font-size: 36px;
+		margin-bottom: 20px !important;
+	}
+
+
+	.message-info-holder{
+		height: 50px;
+		margin-bottom: 0px;
+	}
+
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+	.message-btn{
+		float: right;
+		margin-top: 0px;
+		margin-left: 20px;
+	}
+
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
