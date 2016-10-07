@@ -1,0 +1,161 @@
+.interactions {
+	padding: 35px 0 ; 
+	margin-bottom: 35px;
+	border-bottom: 1px solid rgb(85, 85, 85);
+	width: 100%;
+	margin: 0 auto;
+}
+
+.my-interactions-wrapper{
+	padding: 50px 0;
+}
+
+.interaction-title{
+	font-size: 25px;
+	margin: 0 0 30px 0 !important;
+}
+
+.interaction-img {
+	text-align: center;
+}
+
+.interaction-img img {
+	width: 125px;
+}
+
+.interaction-contact-info{
+	text-align: center;
+}
+
+
+.interaction-name p{
+	font-size: 2em;
+	margin: 0px;
+}
+
+.interaction-name p a:hover {
+	color: rgb(58, 150, 205);
+	text-decoration: none;
+}
+
+.interaction-stars{
+	color: #ffbe00;
+	border-color: #d49921;
+	font-size: 1.5em;
+}
+
+.interaction-reviews{
+	font-size: 1.5em;
+}
+
+.interaction-p{
+	margin: 0px;
+}
+
+.interaction-amt{
+	font-size: 2.75em;
+	margin: 0px;
+}
+
+.interaction-place{
+	margin: 0px;
+}
+
+
+.interaction-btn {
+	width: 200px;
+	margin-top: 15px;
+	background-color: rgb(58, 150, 205) !important;
+	border-color: rgb(58, 150, 205) !important;
+}
+
+.interaction-btn:hover {
+	background-color: rgb(58, 150, 205) !important;
+	border-color: rgb(58, 150, 205) !important;
+}
+
+
+
+
+
+
+
+/******************************************************************************/
+/******************************** Media Queries ******************************/
+/****************************************************************************/
+
+
+/* Smartphones  ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 768px)  {
+	
+	.interactions {
+		width: 90%;
+	}
+
+	.interaction-title{
+		font-size: 36px;
+	}
+
+	.interaction-img img {
+		float: right;
+	}
+
+
+	.interaction-btn {
+		width: 50%;
+	}
+
+	
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+	.interaction-btn {
+		width: 200px !important;
+	}
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FiendlyTransfer</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+        <!-- Global Styles  -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/global-inner.css"> 
+
+        <!-- Dashboard Styles -->
+        <link rel="stylesheet" type="text/css" href="css/interactions.css">        
+
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.eot">
+        <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.svg">
+        <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.ttf">
+        <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.woff">
+        <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.woff2">
+
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typed.js"></script>
+
+ 
+        
+
+    </head>
+
+    <body>
+
+        <div class="dashboard-navbar">
+            <nav class="navbar navbar-default navbar-static-top nav-ft">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+
+                  <a class="navbar-brand logo-dashboard-holder" href="#"><img class="logo-dashboard"  src="images/logo.png"></a>
+                </div>
+
+                <!-- Navbar for Mobiles -->
+                <div class="ft-navbar-mobile">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li> 
+                        <li><a href="#">Link</a></li>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+
+                <!-- Navbar for Desktops -->
+                <div class="ft-navbar-desktop">
+                    <div class="header-middle-container">
+
+                        <li class="dropdown in-line">
+                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proposals<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">In Progress</a></li>
+                            <li><a href="#">Archived</a></li>
+                          </ul>
+                        </li>
+
+                        <li class="dropdown in-line">
+                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interactions<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">In Progress</a></li>
+                            <li><a href="#">Archived</a></li>
+                          </ul>
+                        </li>
+
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div >
+                      <ul class="nav navbar-nav navbar-right">
+                        <li class="profile-dropdown">  
+                            <a href="#" class="dropdown-toggle dashboard-navbar-picture" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                <img class="nav-profile-img" alt="Apredemy-avatar" src="http://res.cloudinary.com/drkw6qcjz/image/upload/v1473203960/yr4j5rbzexxevn0ogvji.jpg">
+                                <p class="in-line">Henry</p>
+                                <span class="caret ft-caret"></span>
+
+                                <div class="arrow-tip hide" data-section="arrow-tip" style=""></div>
+                            </a>
+
+                            <script type="text/javascript">
+                                $(document).ready(function(){
+                                    $(".dashboard-navbar-picture").click(function(){
+                                        $(".profile-box").toggleClass('hide show');
+                                        $(".arrow-tip").toggleClass('hide show');
+                                    });
+                                });
+                            </script>
+
+                            <div class="profile-box hide" data-section="profile-box" style="">
+                                <div class="box-content">
+                                    <a href="/profile/information" class="picture-big-link">
+                                        <img class="picture-big-navbar" src="https://static8.thumbtackstatic.com/pictures/15419/rgqhscalkrgg4ekhicbn60pkh_100.jpg">
+                                    </a>
+                                    <h3 class="box-name">Henry Sebastian Remache</h3>
+                                    <a href="/profile/reviews" class="box-rating">
+                                        <span class="star-rating star-rating-large stars-5">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i> 
+                                        </span>
+                                        <span class="box-review-count"> (2 reviews)</span>
+                                    </a>
+                                </div>
+                                <div class="box-footer profile-box-nav">
+                                    <a class="GlobalHeader-profileLink" href="/profile/services/MXfn8$JbQi14ng/edit">Profile</a>
+                                    <a href="/profile/settings">Settings</a>
+                                    <a href="/logout">Log Out</a>
+                                </div>
+                            </div>
+                        </li>   
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+              </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+
+        <div class="dashboard-tabs">
+            <div class="dashboard-tabs-wrapper">
+                <ul>
+                    <li class="dashboardtab-wrapper-tab in_progress active">
+                        <a href=""> In progress </a>
+                    </li>
+                    <li class="dashboardtab-wrapper-tab hired">
+                        <a href="">Completed</a>
+                    </li>
+                    <li class="dashboardtab-wrapper-tab archived">
+                        <a href="">Archived</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="secondary-navbar">
+            
+        </div>
+
+        <!-- My Interactions -->
+        <div class="my-interactions-wrapper">
+            
+            <div class="container">
+
+                <h1 class="interaction-title ft-blue "> My Interactions </h1>
+
+
+                <div class="interactions">
+
+                    <div class="row">
+                    
+                        <div class="col-sm-3 interaction-img">
+                            <img src="images/ref-user1.jpg" >
+                        </div>
+
+
+                        <div class="col-sm-3">
+                            <div class="interaction-contact-info">
+                                
+                                <div class="interaction-name">
+                                    <p><a class="ft-blue" href="">Ivan Viteri</a></p>  
+                                </div>
+                                
+                                <div class="interaction-stars-holder">
+                                    <span class="interaction-stars" data-memberid="102">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o">   
+                                        </i> 
+                                    </span>
+                                    <span class="interaction-reviews">(3)</span>
+                                </div>
+
+                                <p class="interaction-p ft-dark-grey"> 6 finished transactions </p>
+                                <p class="interaction-p ft-dark-grey"> 10 mutual friends </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-5">
+
+                            <p class="interaction-amt ft-blue center"><span>$</span><span>300</span></p>
+                            <p class="interaction-place  ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
+
+                            <div class="center">
+                                <a href="" class="interaction-btn btn btn-primary white ">Message</a>
+                                <a href="" class="interaction-btn btn btn-primary white ">Finish Transaction</a>    
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="interactions">
+
+                    <div class="row">
+                    
+                        <div class="col-sm-3 interaction-img">
+                            <img src="images/ref-user1.jpg" >
+                        </div>
+
+
+                        <div class="col-sm-3">
+                            <div class="interaction-contact-info">
+                                
+                                <div class="interaction-name">
+                                    <p><a class="ft-blue" href="">Ivan Viteri</a></p>  
+                                </div>
+                                
+                                <div class="interaction-stars-holder">
+                                    <span class="interaction-stars" data-memberid="102">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o">   
+                                        </i> 
+                                    </span>
+                                    <span class="interaction-reviews">(3)</span>
+                                </div>
+
+                                <p class="interaction-p ft-dark-grey"> 6 finished transactions </p>
+                                <p class="interaction-p ft-dark-grey"> 10 mutual friends </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-5">
+
+                            <p class="interaction-amt ft-blue center"><span>$</span><span>300</span></p>
+                            <p class="interaction-place  ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
+
+                            <div class="center">
+                                <a href="" class="interaction-btn btn btn-primary white ">Message</a>
+                                <a href="" class="interaction-btn btn btn-primary white ">Finish Transaction</a>    
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="interactions">
+
+                    <div class="row">
+                    
+                        <div class="col-sm-3 interaction-img">
+                            <img src="images/ref-user1.jpg" >
+                        </div>
+
+
+                        <div class="col-sm-3">
+                            <div class="interaction-contact-info">
+                                
+                                <div class="interaction-name">
+                                    <p><a class="ft-blue" href="">Ivan Viteri</a></p>  
+                                </div>
+                                
+                                <div class="interaction-stars-holder">
+                                    <span class="interaction-stars" data-memberid="102">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o">   
+                                        </i> 
+                                    </span>
+                                    <span class="interaction-reviews">(3)</span>
+                                </div>
+
+                                <p class="interaction-p ft-dark-grey"> 6 finished transactions </p>
+                                <p class="interaction-p ft-dark-grey"> 10 mutual friends </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-5">
+
+                            <p class="interaction-amt ft-blue center"><span>$</span><span>300</span></p>
+                            <p class="interaction-place  ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
+
+                            <div class="center">
+                                <a href="" class="interaction-btn btn btn-primary white ">Message</a>
+                                <a href="" class="interaction-btn btn btn-primary white ">Finish Transaction</a>    
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </body>
+</html>
