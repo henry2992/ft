@@ -1,0 +1,93 @@
+.profile-wrapper{
+	padding: 50px 0;
+	width: 75% !important;
+	margin: 0 auto;
+}
+
+.profile-wrapper-fix{
+
+}
+
+.profile-img-holder{
+	text-align: center;
+}
+
+.profile-img-holder img {
+	width: 125px;
+	border-radius: 50%;
+}
+
+.profile-img-holder p {
+	text-align: left;
+}
+
+.profile-name {
+	font-size: 2em;
+}
+
+.profile-stars i {
+	color: #ffbe00;
+	border-color: #d49921;
+	font-size: 1.5em;
+}
+
+.profile-no-comments{
+	font-size: 1.5em;
+}
+
+.profile-finish-transactions{
+	margin: 10px 0 0 0 !important;
+}
+
+/************************************************************************/
+/*************************** Profile Navigation ************************/
+/**********************************************************************/
+
+
+
+
+.profile-navigation{
+	border-bottom: 1px solid #edeeee;
+	border-top: 1px solid #edeeee;
+	/* min-width: 100%; */
+	/*padding: 15px 0;*/
+}
+
+.profile-navigation a {
+	display: inline-block;
+	margin: 0 12px -1px;
+	padding: 0;
+	height: 43px;
+	line-height: 43px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	color: #8d9494;
+}
+
+.profile-navigation a:hover {
+	border-bottom: 2px solid #f27802;
+	color: #8d9494;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
