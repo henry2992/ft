@@ -39,6 +39,16 @@
 	margin: 10px 0 0 0 !important;
 }
 
+.profile-person-info i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.profile-person-info span{
+    font-size: 20px;
+    margin-right: 25px;
+}
+
 /************************************************************************/
 /*************************** Profile Navigation ************************/
 /**********************************************************************/
@@ -49,6 +59,7 @@
 .profile-navigation{
 	border-bottom: 1px solid #edeeee;
 	border-top: 1px solid #edeeee;
+	margin-top: 30px;
 	/* min-width: 100%; */
 	/*padding: 15px 0;*/
 }
@@ -65,16 +76,30 @@
 }
 
 .profile-navigation a:hover {
-	border-bottom: 2px solid #f27802;
-	color: #8d9494;
+	border-bottom: 2px solid rgb(58, 150, 205);
+	color: rgb(58, 150, 205);
 	text-decoration: none;
 	cursor: pointer;
+
 }
 
 
 
+/**************************************************************/
+/************************ About Me ***************************/
+/************************************************************/
 
+.about-me-wrapper{
+	width: 100% !important;
+	margin-top: 50px;
+}
 
+.about-me-details {
+    display: -webkit-flex;
+    display: flex;
+    padding: 16px 0;
+    border-top: 1px solid #e1e3e3;
+}
 
 
 
