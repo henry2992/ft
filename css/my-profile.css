@@ -9,7 +9,7 @@
 }
 
 .profile-img-holder{
-	text-align: center;
+	text-align: left;
 }
 
 .profile-img-holder img {
@@ -17,7 +17,7 @@
 }
 
 .profile-img-holder p {
-	text-align: center;
+	text-align: left;
 }
 
 .profile-name {
@@ -47,6 +47,12 @@
     font-size: 20px;
     margin-right: 25px;
 }
+
+.profile-improve{
+	width: 125px;
+	font-size: 12px;
+}
+
 
 /************************************************************************/
 /*************************** Profile Navigation ************************/
@@ -108,6 +114,8 @@
 
 .about-me-title {
 	margin: 50px 0 20px 0 !important;
+	font-weight: bold;
+	font-size: 2em;
 }
 
 
@@ -149,15 +157,15 @@
 /******************************************************/
 
 .social-fb-conections{
-	border-top: 1px solid #e1e3e3;
 	display: flex;
 	padding: 30px 0;
 }
 
 .social-conections-title {
 	margin: 50px 0 20px 0 !important;
+	font-weight: bold;
+	font-size: 2em;
 }
-
 
 .social-conections-block{
 	align-items:  stretch;
@@ -168,11 +176,9 @@
 	width: 75px;
 }
 
-
 .fb-friends-wrapper{
 	margin-top: 20px;
 }
-
 
 .social-fb-frame{
 	height: 50px; 
@@ -184,7 +190,6 @@
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 	margin: 0 auto;
 }
-
 
 .social-fb-friend {
 	background: #3A6F9A;
@@ -198,7 +203,6 @@
 
 .social-lk-conections{
 	border-top: 1px solid #e1e3e3;
-	border-bottom:  1px solid #e1e3e3;
 	display: flex;
 	padding: 30px 0;
 }
@@ -218,8 +222,10 @@
 	list-style-type: none;
 }
 
-.reviews-title {
+.profile-reviews-title {
 	margin: 50px 0 20px 0 !important;
+	font-weight: bold;
+	font-size: 2em;
 }
 
 .reviews-img-frame{
