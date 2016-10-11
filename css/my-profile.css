@@ -94,23 +94,77 @@
 	margin-top: 50px;
 }
 
+.about-me-infoholder{
+	margin-top: 35px;
+}
+
+
 .about-me-details {
-    display: -webkit-flex;
-    display: flex;
+    padding: 16px 0;
+    border-bottom: 1px solid #e1e3e3;
+ 
+}
+
+.about-me-details:first-child {
     padding: 16px 0;
     border-top: 1px solid #e1e3e3;
 }
 
+/********************************************************/
+/****************** Social Conections ******************/
+/******************************************************/
 
 
 
+.social-fb-conections{
+	border: 1px solid black;
+	display: flex;
+	padding: 30px 0;
+}
+
+.social-conections-block{
+	align-items:  stretch;
+	align-self: center ;
+}
+
+.social-fb-img {
+	width: 75px;
+}
 
 
+.fb-friends-wrapper{
+	margin-top: 20px;
+}
 
 
+.social-fb-frame{
+	height: 50px; 
+	width: 50px;
+	white-space: nowrap;
+	text-align: center;
+	overflow: hidden;
+	border: 1px solid #FFF;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+}
 
 
+.social-fb-friend {
+	background: #3A6F9A;
+	vertical-align: middle;
+	max-width: 50px;
+	left: -3px;
+	position: relative;
+}
 
+/*LinkedIn*/
+
+.social-lk-conections{
+	border: 1px solid black;
+	display: flex;
+	padding: 30px 0;
+	
+}
 
 
 
