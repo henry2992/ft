@@ -1,6 +1,6 @@
 .profile-wrapper{
 	padding: 50px 0;
-	width: 75% !important;
+	width: 65% !important;
 	margin: 0 auto;
 }
 
@@ -14,11 +14,10 @@
 
 .profile-img-holder img {
 	width: 125px;
-	border-radius: 50%;
 }
 
 .profile-img-holder p {
-	text-align: left;
+	text-align: center;
 }
 
 .profile-name {
@@ -59,7 +58,7 @@
 .profile-navigation{
 	border-bottom: 1px solid #edeeee;
 	border-top: 1px solid #edeeee;
-	margin-top: 30px;
+	margin-top: 50px;
 	/* min-width: 100%; */
 	/*padding: 15px 0;*/
 }
@@ -68,11 +67,14 @@
 	display: inline-block;
 	margin: 0 12px -1px;
 	padding: 0;
-	height: 43px;
-	line-height: 43px;
+	height: 60px;
+	line-height: 60px;
 	box-sizing: border-box;
 	vertical-align: middle;
 	color: #8d9494;
+	font-size: 20px;
+	width: 30%;
+	text-align: center;
 }
 
 .profile-navigation a:hover {
@@ -94,33 +96,68 @@
 	margin-top: 50px;
 }
 
+.about-me-holder{
+	display: flex;
+}
+
+.about-me-block {
+	align-items:  stretch;
+	align-self: center ;
+}
+
+
+.about-me-title {
+	margin: 50px 0 20px 0 !important;
+}
+
+
 .about-me-infoholder{
-	margin-top: 35px;
+	margin-top: 35px;	
 }
 
 
 .about-me-details {
     padding: 16px 0;
-    border-bottom: 1px solid #e1e3e3;
- 
 }
+
 
 .about-me-details:first-child {
     padding: 16px 0;
-    border-top: 1px solid #e1e3e3;
+    border-bottom: 1px solid #e1e3e3;
 }
+
+
+.about-me-detail-holder{
+	margin: 10px  0;
+}
+
+.about-me-detail-holder i {
+	margin-right: 10px;
+	color: #8d9494;
+	font-size: 20px;
+}
+
+.about-me-detail-holder span {
+	color: #8d9494;
+	font-size: 18px;
+}
+
+
 
 /********************************************************/
 /****************** Social Conections ******************/
 /******************************************************/
 
-
-
 .social-fb-conections{
-	border: 1px solid black;
+	border-top: 1px solid #e1e3e3;
 	display: flex;
 	padding: 30px 0;
 }
+
+.social-conections-title {
+	margin: 50px 0 20px 0 !important;
+}
+
 
 .social-conections-block{
 	align-items:  stretch;
@@ -160,11 +197,105 @@
 /*LinkedIn*/
 
 .social-lk-conections{
-	border: 1px solid black;
+	border-top: 1px solid #e1e3e3;
+	border-bottom:  1px solid #e1e3e3;
 	display: flex;
 	padding: 30px 0;
-	
 }
+
+
+/*****************************************************************/
+/************************** Review Item *************************/
+/***************************************************************/
+
+.review-list:first-child {
+	border-top: 1px solid #e1e3e3;
+}
+
+.review-item {
+	padding: 24px 0 20px;
+	border-bottom:  1px solid #e1e3e3;
+	list-style-type: none;
+}
+
+.reviews-title {
+	margin: 50px 0 20px 0 !important;
+}
+
+.reviews-img-frame{
+	height: 75px; 
+	width: 75px;
+	white-space: nowrap;
+	text-align: center;
+	overflow: hidden;
+	border: 1px solid #FFF;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;	
+	display: inline-block;
+}
+
+.reviews-img-frame img {
+	background: #3A6F9A;
+	vertical-align: middle;
+	max-width: 75px;
+	left: -3px;
+	position: relative;
+}
+
+.review-info {
+	margin-left: 25px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.review-name{
+	font-size: 18px;
+}
+
+.review-date {
+    color: #8d9494;
+    padding-left: 10px;
+    font-size: 14px;
+	font-weight: 300;
+}
+
+.review-stars {
+	color: #ffbe00;
+	border-color: #d49921;
+}
+
+.review-profile-comment {
+	margin: 10px auto !important;
+	width: 80%;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

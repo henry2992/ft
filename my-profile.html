@@ -142,6 +142,7 @@
                 <div class="profile-info row">    
                     <div class="col-sm-3 profile-img-holder">
                         <img class="" alt="" src="http://res.cloudinary.com/drkw6qcjz/image/upload/v1473203960/yr4j5rbzexxevn0ogvji.jpg">
+                        <p class="profile-info-edit"><a href="">Edit Profile</a></p>
                         <p>Improve your profile to secure better matches</p>
                     </div>
 
@@ -172,36 +173,39 @@
 
                 <!-- Profile Navigation -->
                 <div class="profile-navigation">
-                    <a class="">Photos (62)</a>
-                    <a class="">About</a>
-                    <a class="">Reviews (42)</a>
-                    <a class="">Q&amp;A (8)</a>
+                    <a class="">About Me</a>
+                    <a class="">Social Conections</a>
+                    <a class="">Reviews</a>
                 </div>
 
 
                 <!-- About Me -->
+                <div class="about-me-wrapper ">
 
-                <div class="about-me-wrapper container">
+                        <h1 class="about-me-title center ft-blue"> About Me</h1>
 
-                        <h1 class="center ft-blue"> About Me</h1>
-
-                        <div class="row">
+                        <div class="row about-me-holder ft-grey-bg">
                             
-                            <div class="col-md-6 about-me-description ">
+                            <div class="col-md-6 about-me-description about-me-block">
                                 <p>
                                     If you seek to establish a strong brand for your firm that stands out from the rest, we are here to help. We love being creative, and we are passionate about design.
                                 </p>
                             </div>
 
-                            <div class="col-md-6 about-me-panel ">
+                            <div class="col-md-6 about-me-panel about-me-block ">
                                 
                                 <div class="about-me-details" >
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span>Location:</span>
+                                    <div class="about-me-detail-holder">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i><span class="">Location:</span>
+                                    </div>
                                     <p>Quito, Ecuador</p>
                                 </div>
 
                                 <div class="about-me-details" >
-                                    <i class="fa fa-building" aria-hidden="true"></i><span>Company Information: </span>
+                                    <div class="about-me-detail-holder">
+                                        <i class="fa fa-building" aria-hidden="true"></i><span>Company Information:</span>
+                                    </div>
+                                    
                                     <p>Profitas S.A</p>
                                     <p>Position: Presidente</p>
                                     <p>Phone: +59322443174</p>
@@ -209,20 +213,17 @@
 
                             </div>
 
-                        </div>
-                        
+                        </div>     
                 </div>
 
                 <!-- Social Conections -->
                 <div class="social-conections-wrapper">
                     
-                    <h1 class="center ft-blue"> Social Conections</h1>
+                    <h1 class="social-conections-title center ft-blue"> Social Conections</h1>
 
                     <!-- Facebook Conections -->
-                    <div class="social-fb-conections">
+                    <div class="social-fb-conections ft-grey-bg">
                         
-                        
-
                         <div class="col-md-2 social-conections-block center ">
                                 <img src="images/fb.png" class="social-fb-img">            
                         </div>
@@ -291,11 +292,10 @@
                     </div>  
 
                     <!-- LinkedIn -->
-
-                    <div class="social-lk-conections">
+                    <div class="social-lk-conections ft-grey-bg">
                                 
                         <div class="col-md-2 social-conections-block center ">
-                                <img src="images/fb.png" class="social-fb-img">            
+                            <img src="images/linkedin.png" class="social-fb-img">            
                         </div>
 
 
@@ -306,19 +306,79 @@
                             <p><a href="">Browse Profile</a></p>
                             
                         </div>
-
                     </div>
-
-
-                            
-                            
-
-
-
                 </div>
 
 
+                <!-- Reviews -->
+                <div class="reviews-wrapper">
+                    
+                    <div class="reviews-title center">
+                        <h1 class="center ft-blue"> Reviews </h1>
+                        <span class="profile-stars" data-memberid="102">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o">   
+                            </i> 
+                        </span>
+                        <span class="profile-no-comments">3 Reviews</span>
+                    </div>
 
+                    <div class="reviews-holder ft-grey-bg">
+
+                        <ul class="review-list">
+                            <li class="review-item">
+
+                                <div class="reviews-img-frame">
+                                    <img src="images/ref-user2.jpg">
+                                </div>
+
+                                <div class="review-info">
+                                    <span class="ft-blue review-name"> Brian P </span>
+                                    <span class="review-date"> Oct 5, 2016</span>
+                                    <div>
+                                        <span class="review-stars" >
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o">   
+                                            </i> 
+                                        </span>
+                                    </div>
+                                </div> 
+                                
+                                <p class="review-profile-comment ft-dark-grey">Excelente Transferencia</p>   
+                            </li>
+                            
+                            <li class="review-item">
+
+                                <div class="reviews-img-frame">
+                                    <img src="images/ref-user2.jpg">
+                                </div>
+
+                                <div class="review-info">
+                                    <span class="ft-blue review-name"> Brian P </span>
+                                    <span class="review-date"> Oct 5, 2016</span>
+                                    <div>
+                                        <span class="review-stars" >
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o">   
+                                            </i> 
+                                        </span>
+                                    </div>
+                                </div> 
+                                
+                                <p class="review-profile-comment ft-dark-grey">Excelente Transferencia</p>   
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
         </div>
