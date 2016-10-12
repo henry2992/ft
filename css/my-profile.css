@@ -1,6 +1,6 @@
 .profile-wrapper{
 	padding: 50px 0;
-	width: 65% !important;
+	width: 100% !important;
 	margin: 0 auto;
 }
 
@@ -21,17 +21,17 @@
 }
 
 .profile-name {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 .profile-stars i {
 	color: #ffbe00;
 	border-color: #d49921;
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 .profile-no-comments{
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 .profile-finish-transactions{
@@ -44,7 +44,7 @@
 }
 
 .profile-person-info span{
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 25px;
 }
 
@@ -71,17 +71,19 @@
 
 .profile-navigation a {
 	display: inline-block;
-	margin: 0 12px -1px;
+	margin: 20px 0px 0px;
 	padding: 0;
 	height: 60px;
-	line-height: 60px;
+	line-height: 20px;
 	box-sizing: border-box;
 	vertical-align: middle;
 	color: #8d9494;
-	font-size: 20px;
-	width: 30%;
+	font-size: 14px;
+	width: 32%;
 	text-align: center;
 }
+
+
 
 .profile-navigation a:hover {
 	border-bottom: 2px solid rgb(58, 150, 205);
@@ -103,7 +105,7 @@
 }
 
 .about-me-holder{
-	display: flex;
+	display: block;
 }
 
 .about-me-block {
@@ -277,6 +279,84 @@
 	font-size: 1.25em;
 }
 
+
+
+
+/******************************************************************************/
+/******************************** Media Queries ******************************/
+/****************************************************************************/
+
+
+/* Smartphones  ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 768px)  {
+
+	.profile-wrapper{
+
+		width: 65% !important;
+
+	}
+
+	/* Profile Information */
+	.profile-name {
+	    font-size: 2em;
+	}
+
+	.profile-stars i {
+		font-size: 1.5em;
+	}
+
+	.profile-no-comments{
+		font-size: 1.5em;
+	}
+
+	.pf-pr-info-block{
+		display: inline-block;
+	}
+
+	.profile-person-info span{
+	    font-size: 20px;
+	}
+
+
+	/***** About Me *****/
+
+
+	.about-me-holder{
+		display: flex;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen  and (min-width : 992px) { 
+
+	/* Profile Navigation */
+
+	.profile-navigation a {
+		margin: 0 5px -1px;
+		line-height: 60px;
+		font-size: 20px;
+		width: 30%;
+	}
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+	
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
 
 
 
