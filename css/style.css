@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0px !important;
 }
 
+label {
+	font-weight: normal !important;
+}
+
 .white{
 	color: #fff;
 }
@@ -95,6 +99,21 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal !important;
 	margin-bottom: 0px !important;
 }
+
+.ft-inner-title {
+	font-size: 25px;
+}
+
+.ft-blue-btn {
+	background-color: rgb(58, 150, 205) !important;
+    border-color: rgb(58, 150, 205) !important;
+}
+
+.ft-blue-btn:hover {
+	background-color: rgb(58, 150, 205) !important;
+    border-color: rgb(58, 150, 205) !important;
+}
+
 
 /****************** Landing Page *******************/
 
@@ -536,7 +555,10 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 2em;
 	}
 
-	
+	.ft-inner-title {
+		font-size: 36px;
+	}
+
 	.landing-title{
 		font-size: 3.25em;
 		margin: 25px 0 25px 0 !important;

@@ -19,7 +19,7 @@
 
 .messages-holder{
 	border: 1px solid rgb(183, 183, 183);
-	background-color: rgb(249, 247, 248);
+	background-color: #f8f8f8;
 	padding: 50px 35px;
 }
 
@@ -102,13 +102,23 @@
 }
 
 
+/* Smartphones  ----------- */
+@media only screen and (min-width : 500px) {
+/* Styles */
+	.file-messages{
+		width: 250px;
+		overflow: hidden;
+	}
+}
+
+
+
 /* Medium size screens  ----------- */
 @media only screen and (min-width : 768px)  {
 	.messages-title{
 		font-size: 36px;
 		margin-bottom: 20px !important;
 	}
-
 
 	.message-info-holder{
 		height: 50px;

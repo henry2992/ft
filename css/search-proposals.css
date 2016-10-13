@@ -8,10 +8,12 @@
 }
 
 .new-search-btn{
-	margin: 30px 0 !important;
-	background-color: rgb(58, 150, 205) !important;
-	border-color: rgb(58, 150, 205) !important;
-	padding: 10px 35px !important;
+
+	position: absolute;
+	margin: 10px;
+	top:  75px;
+	right: 0;
+
 }
 
 
@@ -40,6 +42,15 @@
 		background-color: rgb(58, 150, 205) !important;
 		border-color: rgb(58, 150, 205) !important;
 		padding: 10px 35px !important;
+		position: relative;
+		top: 0;
+		color: white;
+		border-radius: 5px;
+	}
+
+	.new-search-btn:hover{
+		text-decoration: none;
+		color: white;
 	}
 }
 

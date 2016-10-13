@@ -119,6 +119,16 @@
 	padding: 15px !important;
 }
 
+.ft-dashboard-tabs ul li {
+	width: 50%;
+	float: left !important;
+}
+
+.ft-dashboard-tabs ul li a{
+	margin: 0 !important; 
+}
+
+
 .ft-dashboard-tabs ul li a{
 	border-top: 1px solid #ddd !important;
 	border-right: 1px solid #ddd !important;
@@ -157,7 +167,6 @@
 	margin: 0px;
 	outline: none;
 	color: rgb(60, 73, 93) !important;
-	font-weight: bold;
 }
 
 .need-amt::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -188,7 +197,8 @@
 .need-country{
 	font-size: 0.6em !important;
 	outline: none;
-	width: 150px;
+	width: 200px;
+	text-align: center;
 }
 
 .limit-text{
@@ -219,7 +229,17 @@
 
 .transaction-options-holder{
 	border-bottom: 1px solid rgb(184,184,184);
+	margin: 10px 0;
 }
+
+.transaction-options-holder label {
+	margin-right: 15px;
+}
+
+.transaction-options-holder label input {
+	margin-right: 3px;
+}
+
 
 .proposal-btn {
 	padding: 10px 30px !important;
@@ -231,17 +251,42 @@
 	color: white !important;
 }
 
+.proposal-dates {
+
+	margin: 15px 0px;
+}
+
+.proposal-date-option {
+	text-align: left;
+	width: 100px;
+	margin: 0 auto;
+}
+
 
 
 /*************************************************************************/
 /************************** Search Proposal *****************************/
 /***********************************************************************/
 
+.search-fields{
+	margin-top: 15px;
+}
+
 
 .search-transaction-holder{
 	border: 1px solid #ddd;
-	padding: 75px !important;
+	padding: 15px;
 }
+
+.search-transaction-holder label {
+	margin-right: 15px;
+}
+
+
+.search-transaction-holder label input {
+	margin-right: 3px;
+}
+
 
 .search-transaction-tag{
 	width: 200px;
@@ -260,7 +305,6 @@
     width: 200px;
     background-color: rgb(233, 233, 233);
     border: none;
-    text-align: center;
     border-radius: 5px;
     padding: 10px 10px;
     margin: 0px 0px;
@@ -290,42 +334,56 @@
 .selfProfile{
     width: 125px;
 }
+.profile-name {
+	margin-top: 10px;
+}
 
-.profile-name h3{
+.profile-name{
 	font-size: 1em;
 	color: black;
 	font-weight: bold;
 	overflow: hidden;
     position: relative;
+    display: block;
 }
 
 .profile-name:hover{
 	text-decoration: none;
+	color: black;
 }
 
-.profile-name h3:before{
+.profile-name:before{
 	left: -20px;
     margin: 0 0 0 -200%;
 }
 
 
-.profile-name h3:after{
+.profile-name:after{
     content: "";
     width: 200%;
     height: 0.75em;
     display: inline-block;
     margin: 0 -200% 0 0;
     position: relative;
-    left: 20px;
-    bottom: 0.2em;
+    left: 10px;
+    bottom: 0.3em;
     background: url(../images/bg-head.jpg) repeat-x;
     vertical-align: bottom;
 }
 
+.p-percentage{
+	margin: 0 !important;
+}
 
 .ft-profile-progress{
 	margin-bottom: 10px !important;
+	width: 200px;
 }
+.ft-progress-bar{
+	background-color: rgb(58, 150, 205) !important;
+}
+
+
 
 .profile-friends{
 	font-size: 1.15em;
@@ -333,18 +391,34 @@
 }
 
 
-
 .profile-fb-friends ul{
 	list-style-type: none;
 	padding: 0;
+	margin-top: 15px;
 }
 .profile-fb-friends ul li{
 	display: inline-block;
+	width: 20%;
 }
-.profile-fb-friends ul li img {
+
+.friend-frame-img{
+	height: 50px;
     width: 50px;
-    border-radius: 50%;
-    margin: 15px ;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    border: 3px solid #FFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.friend-frame-img img {
+
+    vertical-align: middle;
+    max-width: 50px;
+    left: -3px;
+    position: relative;
 }
 
 
@@ -370,7 +444,7 @@
 	}
 
 	.need-country{
-		width: 200px;
+		width: 150px;
 	}
 
 	.transaction-form-fix{
@@ -381,6 +455,16 @@
 		width: 60px;
 		text-align: center;
 	}
+
+	.ft-dashboard-tabs ul li {
+		float: none !important;
+	}
+
+	.search-transaction-holder{
+		padding: 75px !important;
+	}
+
+
 }
 
 /*Small Fix*/
@@ -399,14 +483,20 @@
 		text-align: center;
 	}
 
-	.main-dashboard-holder{
-		text-align: center;
+	.need-country{
+		width: 125px;
 	}
+
+
+	
 }
 
 
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
+	.need-country{
+		width: 200px;
+	}
 
 }
 

@@ -38,7 +38,7 @@
 
         <div class="dashboard-navbar">
             <nav class="navbar navbar-default navbar-static-top nav-ft">
-              <div class="container-fluid">
+              <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -66,19 +66,11 @@
                     <div class="header-middle-container">
 
                         <li class="dropdown in-line">
-                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proposals<span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">In Progress</a></li>
-                            <li><a href="#">Archived</a></li>
-                          </ul>
+                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proposals</a>
                         </li>
 
                         <li class="dropdown in-line">
-                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interactions<span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">In Progress</a></li>
-                            <li><a href="#">Archived</a></li>
-                          </ul>
+                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interactions</a>
                         </li>
 
                     </div>
@@ -138,7 +130,7 @@
             
             <div class="container">
 
-                <h1 class="ft-blue uppercase messages-title"> Conversation with: </h1>
+                <h1 class="ft-blue uppercase messages-title ft-inner-title"> Conversation with: </h1>
 
                 <!-- Profile -->
                 <div class="col-sm-4">
@@ -172,7 +164,7 @@
                             <p class="pr-countries ft-blue center"><span>USA</span> to <span>Ecuador</span></p>
 
                             <div class="pr-contact ">
-                                <a href="" class="btn btn-primary white ">Check Out Profile</a>
+                                <a href="" class="btn btn-primary white  ">Check Out Profile</a>
                             </div>
                         </div>
 
@@ -227,8 +219,8 @@
                             <input id="File1" type="file" class="file-messages">
 
                             <div class="messages-btn-holder">
-                                <button type="button" class="btn btn-info message-btn">Reply</button>
-                                <button type="button" class="btn btn-info message-btn">Finish Transaction</button>   
+                                <button type="button" class="btn btn-info message-btn ft-blue-btn">Reply</button>
+                                <button type="button" class="btn btn-info message-btn ft-blue-btn" data-toggle="modal" data-target="#myModal">Finish Transaction</button>   
                             </div>
                         </div>
 
@@ -238,10 +230,98 @@
 
                 
             </div>
+        </div>
 
 
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Rate the transaction:</h4>
+              </div>
+              <div class="modal-body">
+                <div id="divInicial" class="b-promo anchoDivPromo" style="">
+                    <h4 style="margin-bottom:3px" id="spnClosetransaction">Have you completed a successful exchange from this proposal?</h4>
+                 
+                        <div id="divSelectReasons" style="display:none"> 
+                            <span id="spnReason">Reason:</span>&nbsp;
+                         
+                            <select id="ddlReasons">
+                                <option id="spnSelect" value="0" selected="selected">--Select--</option>
+                               
+                                <option id="spnOtherNoRespondTlt" value="6">Other user never responded</option>
+                               <option id="spnNoAgreementTlt" value="7">We did not come to an agreement</option>
+                               <option id="spnNoInterested" value="8">I am no longer interested in this transaction</option> 
+                            </select>
+
+                            &nbsp;&nbsp;<a href="#" id="btnOkNoReasonArgument" style="display:none" class="btn colored"><span class="OkTltClass">OK</span></a>
+                        </div>
+
+                        <div id="divBotonera">
+                            <a href="#" id="btnCompletedSuccess" class="btn colored" data-valor="3"><span id="spnCompletedSuccessfully">YES</span></a>
+                            &nbsp;&nbsp;
+                            <a href="#" id="btnNoInterested" class="btn darkBlack" data-valor="1">NO</a>
+                        </div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+
+        
+<!-- 
+        <div id="divSelectReasons" style=""> 
+            <span id="spnReason">Reason:</span>&nbsp;
+         
+            <select id="ddlReasons">
+                <option id="spnSelect" value="0" selected="selected">--Select--</option>
+               
+                <option id="spnOtherNoRespondTlt" value="6">Other user never responded</option>
+               <option id="spnNoAgreementTlt" value="7">We did not come to an agreement</option>
+               <option id="spnNoInterested" value="8">I am no longer interested in this transaction</option> 
+            </select>
+            &nbsp;&nbsp;<a href="#" id="btnOkNoReasonArgument" style="display:none" class="btn colored"><span class="OkTltClass">OK</span></a>
 
         </div>
+
+        <div id="dvRate" class="b-promo anchoDivPromo">
+
+            <h4 id="h3RateTransaction">Rate the transaction: </h4>
+            <div class="row">
+                <div class="row-item">
+                    <div class="stars">
+                        <input type="radio" name="star" class="star-1" value="1" id="star-1">
+                        <label class="star-1" for="star-1">1</label>
+                        <input type="radio" name="star" class="star-2" value="2" id="star-2">
+                        <label class="star-2" for="star-2">2</label>
+                        <input type="radio" name="star" class="star-3" value="3" id="star-3">
+                        <label class="star-3" for="star-3">3</label>
+                        <input type="radio" name="star" class="star-4" value="4" id="star-4">
+                        <label class="star-4" for="star-4">4</label>
+                        <input type="radio" name="star" class="star-5" value="5" id="star-5">
+                        <label class="star-5" for="star-5">5</label>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-item col-1_3">
+                    <textarea id="txtCommentReview" rows="4" cols="40" placeholder="Comment" class="form-control"></textarea>
+                </div>
+
+                <div class="row-item col-1_3">
+                   
+                <a href="#" id="btnReview" class="btn colored">Post review</a>
+                </div>
+            </div>           
+            
+
+        </div> -->
 
 
     </body>

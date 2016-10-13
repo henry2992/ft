@@ -38,7 +38,7 @@
 
         <div class="dashboard-navbar">
             <nav class="navbar navbar-default navbar-static-top nav-ft">
-              <div class="container-fluid">
+              <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -66,19 +66,11 @@
                     <div class="header-middle-container">
 
                         <li class="dropdown in-line">
-                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proposals<span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">In Progress</a></li>
-                            <li><a href="#">Archived</a></li>
-                          </ul>
+                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proposals</a>
                         </li>
 
                         <li class="dropdown in-line">
-                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interactions<span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">In Progress</a></li>
-                            <li><a href="#">Archived</a></li>
-                          </ul>
+                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interactions</a>
                         </li>
 
                     </div>
@@ -145,14 +137,8 @@
                         <!-- Search Processes Holder -->
                         <div class="col-md-8 ">
 
-                            <!-- Tabs  for mobile -->
-                            <ul class="nav nav-tabs nav-justified ft-navtabs-mobile">
-                                <li role="presentation" class="active"><a href="#propose" aria-controls="propose" role="tab" data-toggle="tab">PROPOSE <br> TRANSACTION</a></li>
-                                <li role="presentation"><a href="#search-proposal" aria-controls="search-proposal" role="tab" data-toggle="tab">SEARCH <br> PROPOSAL</a></li>
-                            </ul>
-
                             <!-- Tabs For Desktops -->
-                            <div class="ft-dashboard-tabs ft-mobile">
+                            <div class="ft-dashboard-tabs ">
                                 <ul class="nav nav-tabs nav-justified">
                                   <li role="presentation" class="active"><a href="#propose" aria-controls="propose" role="tab" data-toggle="tab">PROPOSE A TRANSACTION</a></li>
                                   <li role="presentation"><a href="#search-proposal" aria-controls="search-proposal" role="tab" data-toggle="tab">SEARCH PROPOSAL</a></li>
@@ -247,28 +233,43 @@
                                     </div>
                                     
 
-                                    <span class="ft-grey">When do you need the money?</span>
+                                    <span class="ft-dark-blue">When do you need the money?</span>
 
                                     <!-- Options -->
                                     
                                     <div class="transaction-options-holder">
-                                        <label class="ft-grey"><input id="rbdDateNO" name="rbdDateNeeded" type="radio" value="0" checked="">  <span id="spnPTSoon">As soon as possible</span></label>
+                                        <label class="ft-dark-blue">
+                                            <input id="rbdDateNO" name="rbdDateNeeded" type="radio" value="0" checked="">  
+                                            <span id="spnPTSoon">As soon as possible</span>
+                                        </label>
                                                            
-                                        <label class="ft-grey"><input id="rbdDateYES" name="rbdDateNeeded" type="radio" value="1"> <span id="spnPTSpecific">Specific date</span></label>
+                                        <label class="ft-dark-blue">
+                                            <input id="rbdDateYES" name="rbdDateNeeded" type="radio" value="1"> 
+                                            <span id="spnPTSpecific">Specific date</span>
+                                        </label>
                                         
                                         <div class="proposal-dates row">
                                             <div class="col-sm-4">
-                                                <input id="rdbBefore" type="radio" name="Moment" value="1" checked="checked">
-                                                <span id="spnPTBefore">Before</span>
-                                            <br>
-                                                <input id="rdbAfter" type="radio" name="Moment" value="2">
-                                                <span id="spnPTAfter">After</span>
-                                            <br>
-                                                <input id="rdbAround" type="radio" name="Moment" value="3">
-                                                <span id="spnPTAround">Around</span>
-                                            <br>
-                                                <input id="rdbExactly" type="radio" name="Moment" value="4">
-                                                <span id="spnPTExactly">Exactly</span>
+
+                                                <div class="proposal-date-option">
+                                                    <input id="rdbBefore" type="radio" name="Moment" value="1" checked="checked">
+                                                    <span id="spnPTBefore">Before</span>
+                                                </div>
+
+                                                <div class="proposal-date-option">
+                                                    <input id="rdbAfter" type="radio" name="Moment" value="2">
+                                                    <span id="spnPTAfter">After</span>
+                                                </div>
+
+                                                <div class="proposal-date-option">
+                                                    <input id="rdbAround" type="radio" name="Moment" value="3">
+                                                    <span id="spnPTAround">Around</span>
+                                                </div>
+
+                                                <div class="proposal-date-option">
+                                                    <input id="rdbExactly" type="radio" name="Moment" value="4">
+                                                    <span id="spnPTExactly">Exactly</span>
+                                                </div>
                                             </div>
 
                                             <div class="col-sm-8">
@@ -294,7 +295,7 @@
 
                                     <!-- Calculador -->
 
-                                    <p>Need to calculate this amount of USD in your local currency? <a href="">Check Now</a></p>
+                                    <p class="ft-dark-blue">Need to calculate this amount of USD in your local currency? <a href="" class="ft-blue">Check Now</a></p>
 
                                     <div class="center">
                                         <input  value="MAKE A PROPOSAL!" class="proposal-btn btn bnt-large ft-blue-bg white btn-submit">
@@ -304,147 +305,154 @@
                                 <!-- Search a Proposal -->
                                 <div role="tabpanel" class="tab-pane search-transaction-holder" id="search-proposal">
                                     
-                                    <label class="ft-grey"><input id="searchProposal" name="optionSearch" type="radio" value="0" checked=""><span >Search Proposal</span></label>
+                                    <label class="ft-dark-blue">
+                                        <input id="searchProposal" name="optionSearch" type="radio" value="0" checked="">
+                                        <span >Search Proposal</span>
+                                    </label>
                                                            
-                                    <label class="ft-grey"><input id="searchFriends" name="optionSearch" type="radio" value="1"> <span>Search Friends</span></label>
+                                    <label class="ft-dark-blue">
+                                        <input id="searchFriends" name="optionSearch" type="radio" value="1">
+                                        <span>Search Friends</span>
+                                    </label>
 
                                    
+                                    <div class="search-fields">
+                                        <fieldset id="flsSearchRequest">
+                                        
+                                            <h2 class="ft-blue"> FIND A MATCH FOR YOUR NEED </h2>
 
-                                    <fieldset id="flsSearchRequest">
-                                    
-                                        <h2 class="ft-grey"> FIND A MATCH FOR YOUR NEED </h2>
+                                            <div class="ft-dark-blue">
 
-                                        <div class="">
-
-                                            <div class="search-transaction-tag in-line" >
-                                                <span id="spnSRWhereIsMoney" >Where is your money now? </span>
+                                                <div class="search-transaction-tag in-line" >
+                                                    <span id="spnSRWhereIsMoney" >Where is your money now? </span>
+                                                </div>
+                                                
+                                                <span class="search-transaction-country custom-dropdown custom-dropdown--grey">
+                                                    <select class="search-transaction-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryFrom">
+                                                        <option value="1">USA</option>
+                                                        <option value="2">El Salvador</option>
+                                                        <option value="3">Panamá</option>
+                                                        <option value="4">Ecuador</option>
+                                                        <option value="5">Argentina</option>
+                                                        <option value="6">Australia</option>
+                                                        <option value="7">Brasil</option>
+                                                        <option value="8">Colombia</option>
+                                                        <option value="10">Peru</option>
+                                                        <option value="11">Uruguay</option>
+                                                        <option value="12">Venezuela</option>
+                                                        <option value="14">México</option>
+                                                        <option value="15">Bolivia</option>
+                                                    </select>
+                                                </span>
+         
                                             </div>
                                             
-                                            <span class="search-transaction-country custom-dropdown custom-dropdown--grey">
-                                                <select class="search-transaction-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryFrom">
-                                                    <option value="1">USA</option>
-                                                    <option value="2">El Salvador</option>
-                                                    <option value="3">Panamá</option>
-                                                    <option value="4">Ecuador</option>
-                                                    <option value="5">Argentina</option>
-                                                    <option value="6">Australia</option>
-                                                    <option value="7">Brasil</option>
-                                                    <option value="8">Colombia</option>
-                                                    <option value="10">Peru</option>
-                                                    <option value="11">Uruguay</option>
-                                                    <option value="12">Venezuela</option>
-                                                    <option value="14">México</option>
-                                                    <option value="15">Bolivia</option>
-                                                </select>
-                                            </span>
-     
-                                        </div>
-                                        
-                                        <div class="">
-                                            
-                                            <div class="search-transaction-tag in-line" >
-                                                <span id="spnSRWhereF" class="search-transaction-tag">Where do you need it?</span>
-                                            </div>
+                                            <div class="ft-dark-blue">
+                                                
+                                                <div class="search-transaction-tag in-line" >
+                                                    <span id="spnSRWhereF" class="search-transaction-tag">Where do you need it?</span>
+                                                </div>
 
-                                            <span class=" custom-dropdown custom-dropdown--grey">
-                                                <select class="search-transaction-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryTo">
-                                                    <option value="1">USA</option>
-                                                    <option value="2">El Salvador</option>
-                                                    <option value="3">Panamá</option>
-                                                    <option value="4">Ecuador</option>
-                                                    <option value="5">Argentina</option>
-                                                    <option value="6">Australia</option>
-                                                    <option value="7">Brasil</option>
-                                                    <option value="8">Colombia</option>
-                                                    <option value="10">Peru</option>
-                                                    <option value="11">Uruguay</option>
-                                                    <option value="12">Venezuela</option>
-                                                    <option value="14">México</option>
-                                                    <option value="15">Bolivia</option>
-                                                </select>
-                                            </span>
-                                        </div>
-                                        
-                                        <div class="">
-                                            <div class="search-transaction-tag in-line">
-                                                <span id="spnSRAmountF">Amount US$ : </span>
+                                                <span class=" custom-dropdown custom-dropdown--grey">
+                                                    <select class="search-transaction-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryTo">
+                                                        <option value="1">USA</option>
+                                                        <option value="2">El Salvador</option>
+                                                        <option value="3">Panamá</option>
+                                                        <option value="4">Ecuador</option>
+                                                        <option value="5">Argentina</option>
+                                                        <option value="6">Australia</option>
+                                                        <option value="7">Brasil</option>
+                                                        <option value="8">Colombia</option>
+                                                        <option value="10">Peru</option>
+                                                        <option value="11">Uruguay</option>
+                                                        <option value="12">Venezuela</option>
+                                                        <option value="14">México</option>
+                                                        <option value="15">Bolivia</option>
+                                                    </select>
+                                                </span>
                                             </div>
                                             
-                                            <input id="txtAmount" class="field-subject inl search-transaction-amt" type="text">
-                                        </div>
-
-                                        <div class="">
-                                            <label>
-                                                <input id="chkHigher" type="checkbox">
-                                                <span id="spnSRHigher">Show also proposals with higher amounts</span>
-                                            </label> 
-                                        </div>
-
-                                        <div class="center">
-                                            <a id="hrfSearch" class="proposal-btn btn bnt-large ft-blue-bg white btn-submit">Search Proposals</a>
-                                        </div>
-                                    </fieldset>
-
-                                    <fieldset id="fldFindProfiles">
-                                        
-                                        <h2 class="ft-grey">Find profiles of people who regularly transfer money and match your needs</h2>
-
-                                        <div class="">
-                                            <div class="search-transaction-tag in-line" >
-                                                <span id="spnSRWhereIsMoney" >Where is your money now? </span>
+                                            <div class="ft-dark-blue">
+                                                <div class="search-transaction-tag in-line">
+                                                    <span id="spnSRAmountF">Amount US$ : </span>
+                                                </div>
+                                                
+                                                <input id="txtAmount" class="field-subject inl search-transaction-amt" type="text">
                                             </div>
 
-                                             <span class="search-transaction-country custom-dropdown custom-dropdown--grey">
-                                                <select class="search-transaction-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryFrom">
-                                                    <option value="1">USA</option>
-                                                    <option value="2">El Salvador</option>
-                                                    <option value="3">Panamá</option>
-                                                    <option value="4">Ecuador</option>
-                                                    <option value="5">Argentina</option>
-                                                    <option value="6">Australia</option>
-                                                    <option value="7">Brasil</option>
-                                                    <option value="8">Colombia</option>
-                                                    <option value="10">Peru</option>
-                                                    <option value="11">Uruguay</option>
-                                                    <option value="12">Venezuela</option>
-                                                    <option value="14">México</option>
-                                                    <option value="15">Bolivia</option>
-                                                </select>
-                                            </span>  
-                                        </div>
+                                            <div class="ft-dark-blue">
+                                                <label>
+                                                    <input id="chkHigher" type="checkbox">
+                                                    <span id="spnSRHigher">Show also proposals with higher amounts</span>
+                                                </label> 
+                                            </div>
 
-                                        <div class="">
+                                            <div class="center">
+                                                <a id="hrfSearch" class="proposal-btn btn bnt-large ft-blue-bg white btn-submit">Search Proposals</a>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset id="fldFindProfiles">
                                             
-                                            <div class="search-transaction-tag in-line" >
-                                                <span id="spnSRWhereF" class="search-transaction-tag">Where do you need it?</span>
+                                            <h2 class="ft-blue">Find profiles of people who regularly transfer money and match your needs</h2>
+
+                                            <div class="ft-dark-blue">
+                                                <div class="search-transaction-tag in-line" >
+                                                    <span id="spnSRWhereIsMoney" >Where is your money now? </span>
+                                                </div>
+
+                                                 <span class="search-transaction-country custom-dropdown custom-dropdown--grey">
+                                                    <select class="search-transaction-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryFrom">
+                                                        <option value="1">USA</option>
+                                                        <option value="2">El Salvador</option>
+                                                        <option value="3">Panamá</option>
+                                                        <option value="4">Ecuador</option>
+                                                        <option value="5">Argentina</option>
+                                                        <option value="6">Australia</option>
+                                                        <option value="7">Brasil</option>
+                                                        <option value="8">Colombia</option>
+                                                        <option value="10">Peru</option>
+                                                        <option value="11">Uruguay</option>
+                                                        <option value="12">Venezuela</option>
+                                                        <option value="14">México</option>
+                                                        <option value="15">Bolivia</option>
+                                                    </select>
+                                                </span>  
                                             </div>
 
-                                            <span class=" custom-dropdown custom-dropdown--grey">
-                                                <select class="search-transaction-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryTo">
-                                                    <option value="1">USA</option>
-                                                    <option value="2">El Salvador</option>
-                                                    <option value="3">Panamá</option>
-                                                    <option value="4">Ecuador</option>
-                                                    <option value="5">Argentina</option>
-                                                    <option value="6">Australia</option>
-                                                    <option value="7">Brasil</option>
-                                                    <option value="8">Colombia</option>
-                                                    <option value="10">Peru</option>
-                                                    <option value="11">Uruguay</option>
-                                                    <option value="12">Venezuela</option>
-                                                    <option value="14">México</option>
-                                                    <option value="15">Bolivia</option>
-                                                </select>
-                                            </span>
-                                        </div>
+                                            <div class="ft-dark-blue">
+                                                
+                                                <div class="search-transaction-tag in-line" >
+                                                    <span id="spnSRWhereF" class="search-transaction-tag">Where do you need it?</span>
+                                                </div>
 
-                                        
-                                        <div class="center">
-                                            <a href="answer.aspx" id="hrfSearchProfile" class="proposal-btn btn bnt-large ft-blue-bg white btn-submit">FIND PROFILES</a>
-                                        </div>
-                                    </fieldset>
+                                                <span class=" custom-dropdown custom-dropdown--grey">
+                                                    <select class="search-transaction-country custom-dropdown__select custom-dropdown__select--grey" id="slcCountryTo">
+                                                        <option value="1">USA</option>
+                                                        <option value="2">El Salvador</option>
+                                                        <option value="3">Panamá</option>
+                                                        <option value="4">Ecuador</option>
+                                                        <option value="5">Argentina</option>
+                                                        <option value="6">Australia</option>
+                                                        <option value="7">Brasil</option>
+                                                        <option value="8">Colombia</option>
+                                                        <option value="10">Peru</option>
+                                                        <option value="11">Uruguay</option>
+                                                        <option value="12">Venezuela</option>
+                                                        <option value="14">México</option>
+                                                        <option value="15">Bolivia</option>
+                                                    </select>
+                                                </span>
+                                            </div>
 
-                                     <script type="text/javascript">
+                                            
+                                            <div class="center">
+                                                <a href="answer.aspx" id="hrfSearchProfile" class="proposal-btn btn bnt-large ft-blue-bg white btn-submit">FIND PROFILES</a>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                    <script type="text/javascript">
 
                                         // //el div de fecha especifica sale oculto.
                                         $('#fldFindProfiles').hide();
@@ -475,16 +483,18 @@
                                 <a href=""><img src="images/myuser.jpg" class="selfProfile"></a>
                                 
                                 <!-- Categories List -->
-                                <a href="" class="profile-name"><h3 class=" uppercase ">Henry Sebastián Remache</h3></a>
+                                <a href="" class="profile-name uppercase">Henry Sebastián Remache</a>
                                 
                                 <p>Chicago, Illinois</p>
-                                <p>Your profile is 30% complete</p>
+
+                                <a href="" rel="nofollow"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit Profile</a>
+                                <p class="p-percentage">Your profile is 30% complete</p>
                                 <div class="ft-profile-progress progress">
-                                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                  <div class="progress-bar progress-bar-info ft-progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
                                     <span class="sr-only">20% Complete</span>
                                   </div>
                                 </div>
-                                <a href="" rel="nofollow"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit Profile</a>
+                                
                                 <p>Improve your profile to secure better matches</p>
 
                                 <!-- End Categories List -->
@@ -494,9 +504,53 @@
 
                                     <div class="profile-fb-friends center">
                                         <ul>
-                                            <li><img src="images/ref-user1.jpg"></li>
-                                            <li><img src="images/ref-user2.jpg"></li>
-                                            <li><img src="images/ref-user3.jpg"></li>
+
+                                            <li>
+                                                <div class="friend-frame-img">
+                                                    <img src="images/ref-user1.jpg">
+                                                </div>
+                                            </li>
+                                            
+                                            <li>
+                                                <div class="friend-frame-img">
+                                                    <img src="images/ref-user2.jpg">
+                                                </div>
+                                            
+                                            <li>
+                                                <div class="friend-frame-img">
+                                                    <img src="images/ref-user3.jpg">
+                                                </div>
+                                            </li>
+                                            
+                                            <li>
+                                                <div class="friend-frame-img">
+                                                    <img src="images/ref-user4.jpg">
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="friend-frame-img">
+                                                    <img src="images/ref-user1.jpg">
+                                                </div>
+                                            </li>
+                                            
+                                            <li>
+                                                <div class="friend-frame-img">
+                                                    <img src="images/ref-user2.jpg">
+                                                </div>
+                                            
+                                            <li>
+                                                <div class="friend-frame-img">
+                                                    <img src="images/ref-user3.jpg">
+                                                </div>
+                                            </li>
+                                            
+                                            <li>
+                                                <div class="friend-frame-img">
+                                                    <img src="images/ref-user4.jpg">
+                                                </div>
+                                            </li>
+
                                         </ul>
                                         <p class="pull-right"><a> See more </a></p>
                                     </div>
@@ -513,11 +567,11 @@
             <div class="container">
                 <div class=" interest-proposals-wrapper ">
                     
-                    <h1 class="ft-blue uppercase center">Proposals that may interest you</h1>
+                    <h1 class="ft-blue uppercase center ft-inner-title">Proposals that may interest you</h1>
 
                     <div class="row proposals-holder">
                         
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 proposals-content">
                             <div class="frame-img">
                                 <img src="images/ref-user1.jpg" class="int-pro-img">
                             </div>
@@ -548,7 +602,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 proposals-content">
                             <div class="frame-img">
                                 <img src="images/ref-user2.jpg" class="int-pro-img">
                             </div>
@@ -579,7 +633,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 proposals-content">
                             <div class="frame-img">
                                 <img src="images/ref-user3.jpg" class="int-pro-img">
                             </div>
@@ -610,7 +664,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 proposals-content">
                             <div class="frame-img">
                                 <img src="images/ref-user4.jpg" class="int-pro-img">
                             </div>
@@ -644,7 +698,7 @@
 
                     <div class="row proposals-holder">
                         
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 proposals-content">
                             <div class="frame-img">
                                 <img src="images/ref-user1.jpg" class="int-pro-img">
                             </div>
@@ -675,7 +729,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 proposals-content">
                             <div class="frame-img">
                                 <img src="images/ref-user2.jpg" class="int-pro-img">
                             </div>
@@ -706,7 +760,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 proposals-content">
                             <div class="frame-img">
                                 <img src="images/ref-user3.jpg" class="int-pro-img">
                             </div>
@@ -737,7 +791,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 proposals-content">
                             <div class="frame-img">
                                 <img src="images/ref-user4.jpg" class="int-pro-img">
                             </div>

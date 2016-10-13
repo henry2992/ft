@@ -37,7 +37,7 @@
 
         <div class="dashboard-navbar">
             <nav class="navbar navbar-default navbar-static-top nav-ft">
-              <div class="container-fluid">
+              <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -65,19 +65,11 @@
                     <div class="header-middle-container">
 
                         <li class="dropdown in-line">
-                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proposals<span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">In Progress</a></li>
-                            <li><a href="#">Archived</a></li>
-                          </ul>
+                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proposals</a>
                         </li>
 
                         <li class="dropdown in-line">
-                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interactions<span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">In Progress</a></li>
-                            <li><a href="#">Archived</a></li>
-                          </ul>
+                          <a href="#" class="dropdown-toggle middle-tab current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interactions</a>
                         </li>
 
                     </div>
@@ -86,7 +78,7 @@
                       <ul class="nav navbar-nav navbar-right">
                         <li class="profile-dropdown">  
                             <a href="#" class="dropdown-toggle dashboard-navbar-picture" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
-                                <img class="nav-profile-img" alt="" src="http://res.cloudinary.com/drkw6qcjz/image/upload/v1473203960/yr4j5rbzexxevn0ogvji.jpg">
+                                <img class="nav-profile-img" alt="Apredemy-avatar" src="http://res.cloudinary.com/drkw6qcjz/image/upload/v1473203960/yr4j5rbzexxevn0ogvji.jpg">
                                 <p class="in-line">Henry</p>
                                 <span class="caret ft-caret"></span>
 
@@ -180,14 +172,14 @@
 
                 <!-- Profile Navigation -->
                 <div class="profile-navigation">
-                    <a class="">About Me</a>
-                    <a class="">Social Conections</a>
-                    <a class="">Reviews</a>
+                    <a href="#aboutMe" class="scroll" >About Me</a>
+                    <a href="#socialConnection" class="scroll">Social Conections</a>
+                    <a href="#reviews" class="scroll">Reviews</a>
                 </div>
 
 
                 <!-- About Me -->
-                <div class="about-me-wrapper ">
+                <div id="aboutMe" class="about-me-wrapper ">
 
                         <h1 class="about-me-title ft-blue"> About Me</h1>
 
@@ -224,91 +216,167 @@
                 </div>
 
                 <!-- Social Conections -->
-                <div class="social-conections-wrapper">
+                <div id="socialConnection" class="social-conections-wrapper">
                     
                     <h1 class="social-conections-title ft-blue"> Social Conections</h1>
 
                     <!-- Facebook Conections -->
                     <div class="social-fb-conections ft-grey-bg">
                         
-                        <div class="col-md-2 social-conections-block center ">
-                                <img src="images/fb.png" class="social-fb-img">            
+                        <div class="col-sm-2 social-conections-block">
+                                <img src="images/fb.png" class="social-cn-img ">            
                         </div>
 
-
-                        <div  class="col-md-10 social-conections-block">
+                        <div  class="col-sm-10 social-conections-block">
                             
                             <h4 class="ft-blue">Friends in Common: 13</h4>
 
-                            <div class="row fb-friends-wrapper">
-                            
-                                <div class="col-md-3 center ">
-                                    <div class="social-fb-frame">
-                                        <img src="images/ref-user1.jpg" class="social-fb-friend">
+                            <div class="fb-friend-container fb-hide">
+                                <div class="row fb-friends-wrapper">
+                                    <div class="col-sm-3 center friends-block ">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user1.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span >Pedro Perez</span>
                                     </div>
-                                    <span>Pedro Perez</span>
-                                </div>
-                                <div class="col-md-3 center">
-                                    <div class="social-fb-frame">
-                                        <img src="images/ref-user2.jpg" class="social-fb-friend">
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user2.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
                                     </div>
-                                    <span>Pedro Perez</span>
-                                </div>
-                                <div class="col-md-3 center">
-                                    <div class="social-fb-frame">
-                                        <img src="images/ref-user3.jpg" class="social-fb-friend">
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user3.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
                                     </div>
-                                    <span>Pedro Perez</span>
-                                </div>
-                                <div class="col-md-3 center">
-                                    <div class="social-fb-frame">
-                                        <img src="images/ref-user4.jpg" class="social-fb-friend">
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user4.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
                                     </div>
-                                    <span>Pedro Perez</span>
                                 </div>
-                            </div>
 
-                            <div class="row fb-friends-wrapper">
+                                <div class="row fb-friends-wrapper">
                                 
-                                <div class="col-md-3 center ">
-                                    <div class="social-fb-frame">
-                                        <img src="images/ref-user1.jpg" class="social-fb-friend">
+                                    <div class="col-sm-3 center friends-block ">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user1.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
                                     </div>
-                                    <span>Pedro Perez</span>
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user2.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
+                                    </div>
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user3.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
+                                    </div>
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user4.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
+                                    </div>
                                 </div>
-                                <div class="col-md-3 center">
-                                    <div class="social-fb-frame">
-                                        <img src="images/ref-user2.jpg" class="social-fb-friend">
+
+                                <div class="row fb-friends-wrapper">
+                                    <div class="col-sm-3 center friends-block ">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user1.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span >Pedro Perez</span>
                                     </div>
-                                    <span>Pedro Perez</span>
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user2.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
+                                    </div>
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user3.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
+                                    </div>
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user4.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
+                                    </div>
                                 </div>
-                                <div class="col-md-3 center">
-                                    <div class="social-fb-frame">
-                                        <img src="images/ref-user3.jpg" class="social-fb-friend">
+
+                                <div class="row fb-friends-wrapper">
+                                
+                                    <div class="col-sm-3 center friends-block ">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user1.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
                                     </div>
-                                    <span>Pedro Perez</span>
-                                </div>
-                                <div class="col-md-3 center">
-                                    <div class="social-fb-frame">
-                                        <img src="images/ref-user4.jpg" class="social-fb-friend">
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user2.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
                                     </div>
-                                    <span>Pedro Perez</span>
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user3.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
+                                    </div>
+                                    <div class="col-sm-3 center friends-block">
+                                        <div class="social-fb-frame">
+                                            <img src="images/ref-user4.jpg" class="social-fb-friend">
+                                        </div>
+                                        <span>Pedro Perez</span>
+                                    </div>
                                 </div>
                             </div>
+                           
+                            <span class="all-friends see-more ft-blue">See More</span>
+
+                            <script type="text/javascript">
+                                
+                                $('.all-friends').click(function() {
+                                    $('.fb-friend-container').toggleClass("fb-hide fb-show");
+                                    $('.fb-friend-container').toggleClass("see-more see-less"); 
+                                });
+
+                                $('.see-more').click(function(){
+                                    var $this = $(this);
+                                    $this.toggleClass('see-more');
+
+                                    if($this.hasClass('see-more')){
+                                        $this.text('See More');         
+                                    } else {
+                                        $this.text('See Less');
+                                    }
+                                });
+                       
+                            </script>
                         </div>
                     </div>  
 
                     <!-- LinkedIn -->
                     <div class="social-lk-conections ft-grey-bg">
                                 
-                        <div class="col-md-2 social-conections-block center ">
-                            <img src="images/linkedin.png" class="social-fb-img">            
+                        <div class="col-md-2 social-conections-block">
+                            <img src="images/linkedin.png" class="social-cn-img">            
                         </div>
-
 
                         <div  class="col-md-10 social-conections-block">
                             
-                            <p>Number of LinkedIn Contacts: 110</p>
+                            <p class="ft-dark-grey">Number of LinkedIn Contacts: 110</p>
 
                             <p><a href="">Browse Profile</a></p>
                             
@@ -316,9 +384,8 @@
                     </div>
                 </div>
 
-
                 <!-- Reviews -->
-                <div class="reviews-wrapper">
+                <div id="reviews" class="reviews-wrapper">
       
                     <h1 class="profile-reviews-title ft-blue"> Reviews </h1>
 
@@ -380,4 +447,25 @@
         </div>
         
     </body>
+
+    <script type="text/javascript">
+        var hashTagActive = "";
+        $(".scroll").on("click touchstart" , function (event) {
+            if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+                event.preventDefault();
+                //calculate destination place
+                var dest = 0;
+                if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                    dest = $(document).height() - $(window).height();
+                } else {
+                    dest = $(this.hash).offset().top;
+                }
+                //go to destination
+                $('html,body').animate({
+                    scrollTop: dest
+                }, 2000, 'swing');
+                hashTagActive = this.hash;
+            }
+        });
+    </script>
 </html>

@@ -184,6 +184,7 @@ li.profile-dropdown.open a {
 .dashboard-tabs-wrapper{
 	min-height: 44px;
 	margin-left: 34px
+
 }
 
 .dashboard-tabs-wrapper ul {
@@ -193,6 +194,7 @@ li.profile-dropdown.open a {
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
+	float: right;
 }
 
 .dashboardtab-wrapper-tab{
@@ -213,6 +215,20 @@ li.profile-dropdown.open a {
 	transition: color .3s
 }
 
+.dashboardtab-wrapper-tab a:hover {
+	text-decoration: none;
+}
+
+.active-tab a {
+	color: rgb(58, 150, 205) !important;
+	font-weight: bold;
+}
+
+
+/* Mobile */
+.ft-navtabs-mobile li{
+	width: 50%;
+}
 
 
 
@@ -231,6 +247,9 @@ li.profile-dropdown.open a {
 	margin: 0; 
 }
 
+.proposals-content {
+	margin: 25px auto; 
+}
 
 .frame {
 	margin-bottom: 50px;
@@ -350,6 +369,10 @@ li.profile-dropdown.open a {
 	/*** Proposals ***/
 	.proposals-holder{
 		margin: 35px 0 30px 0; 
+	}
+
+	.proposals-content {
+		margin: 0px; 
 	}
 
 

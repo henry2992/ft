@@ -1,13 +1,13 @@
 .interactions {
-	padding: 35px 0 ; 
+	padding: 20px 0 ; 
 	margin-bottom: 35px;
-	border-bottom: 1px solid rgb(85, 85, 85);
+	border-bottom: 1px solid rgb(184,184,184);
 	width: 100%;
 	margin: 0 auto;
 }
 
 .my-interactions-wrapper{
-	padding: 50px 0;
+	padding: 30px 0 50px;
 }
 
 .interaction-title{
@@ -16,12 +16,23 @@
 }
 
 .interaction-img {
-	text-align: center;
+	height: 100px;
+    width: 100px !important;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    border: 3px solid #FFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 .interaction-img img {
-	width: 125px;
+	vertical-align: middle;
+    max-width: 100px;
+    left: -3px;
+    position: relative;
 }
+
 
 .interaction-contact-info{
 	text-align: center;
@@ -29,7 +40,7 @@
 
 
 .interaction-name p{
-	font-size: 2em;
+	font-size: 1.25em;
 	margin: 0px;
 }
 
@@ -41,11 +52,11 @@
 .interaction-stars{
 	color: #ffbe00;
 	border-color: #d49921;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .interaction-reviews{
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .interaction-p{
@@ -91,6 +102,18 @@
 }
 
 
+@media only screen and (min-width : 500px) {
+/* Styles */
+	.interaction-btn {
+		width: 250px;
+	}
+}
+
+
+	
+
+
+
 /* Medium size screens  ----------- */
 @media only screen and (min-width : 768px)  {
 	
@@ -108,7 +131,7 @@
 
 
 	.interaction-btn {
-		width: 50%;
+		width: 75%;
 	}
 
 	
