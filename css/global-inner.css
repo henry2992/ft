@@ -97,12 +97,44 @@ li.profile-dropdown.open a {
 	background: url(../images/profile-box-arrow.png) no-repeat;
 	z-index: 4;
 }
-.box-content{
+.notification-box-content{
 	padding: 20px;
 	min-height: 80px;
 	text-align: left;
+	max-height: 200px;
+	overflow-y: scroll;
+}
+.notification-box-content ul {
+	padding: 0px !important;
+	list-style-type: none;
 }
 
+.notification-box-content ul li {
+	border-bottom: 1px solid rgb(184,184,184);
+}
+
+.notification-close {
+	font-size: 10px;
+	color: #e34735;
+}
+
+.notification-info{
+	color: rgb(60, 73, 93);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.notification-conversation{
+	font-size: 10px;
+	color: rgb(58, 150, 205);
+}
+
+/*
+.notification-box-content ul li{
+	
+}
+
+*/
 
 
 
