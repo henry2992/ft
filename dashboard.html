@@ -77,6 +77,25 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div >
                       <ul class="nav navbar-nav navbar-right">
+                        <li class="ft-bell">
+
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+
+                            <div class="arrow-notification-tip hide" data-section="arrow-tip" ></div>
+
+                            <div class="notification-box hide" data-section="profile-box" style="">
+                                <div class="box-content">
+                                    
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $(document).ready(function(){
+
+                                    });
+                            </script>
+
+                        </li>
                         <li class="profile-dropdown">  
                             <a href="#" class="dropdown-toggle dashboard-navbar-picture" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
                                 <img class="nav-profile-img" alt="Apredemy-avatar" src="http://res.cloudinary.com/drkw6qcjz/image/upload/v1473203960/yr4j5rbzexxevn0ogvji.jpg">
@@ -88,10 +107,72 @@
 
                             <script type="text/javascript">
                                 $(document).ready(function(){
+                                    
                                     $(".dashboard-navbar-picture").click(function(){
-                                        $(".profile-box").toggleClass('hide show');
-                                        $(".arrow-tip").toggleClass('hide show');
+                                       
+                                        if ($(".profile-box").hasClass('hide')) {
+                                            $('.profile-box').removeClass('hide').addClass('show');
+                                            $(".arrow-tip").removeClass('hide').addClass('show');
+                                        } else {
+                                            $('.profile-box').removeClass('show').addClass('hide');
+                                            $(".arrow-tip").removeClass('show').addClass('hide');
+                                        }
+
+                                        // If notification box is open then close it
+                                        if ($(".notification-box").hasClass('show')) {
+                                            $('.notification-box').removeClass('show').addClass('hide');
+                                            $('.arrow-notification-tip').removeClass('show').addClass('hide');
+                                        }
+
+                                        event.stopPropagation();
                                     });
+
+                                    $(".dashboard-navbar-picture").on("click", function(event) {
+                                        event.stopPropagation();
+                                    });
+
+                                   
+
+                                    // Notifications
+                                    $(".ft-bell").on("click", function(event) {
+                                        
+                                        // Show the notification Box
+                                        if ($(".notification-box").hasClass('hide')) {
+                                            $('.notification-box').removeClass('hide').addClass('show');
+                                            $('.arrow-notification-tip').removeClass('hide').addClass('show');
+
+                                        } else {
+                                            $('.notification-box').removeClass('show').addClass('hide');
+                                            $('.arrow-notification-tip').removeClass('show').addClass('hide');
+                                        }
+
+                                        // If Profile box is open then close it
+                                        if ($(".profile-box").hasClass('show')) {
+                                            $('.profile-box').removeClass('show').addClass('hide');
+                                            $(".arrow-tip").removeClass('show').addClass('hide');
+                                        }
+
+
+                                        event.stopPropagation();
+                                    });
+
+                                    $(".notification-box").on("click", function(event)
+                                    {
+                                        event.stopPropagation();
+                                    });
+
+                                    $(document).on("click", function(event) {
+                                        // If click outside hide profile box
+                                        $(".profile-box").removeClass('show').addClass('hide');
+                                        $(".arrow-tip").removeClass('show').addClass('hide');
+                                        // If click outside hide notification box
+                                        $(".notification-box").removeClass('show').addClass('hide');
+                                        $('.arrow-notification-tip').removeClass('show').addClass('hide');
+                                    });
+
+                                    
+
+
                                 });
                             </script>
 
