@@ -1,0 +1,103 @@
+.ft-landing-navbar{
+	background-color: white !important;
+	border: none;
+	border-color: white !important;
+}
+
+.ft-landing-logo{
+	width: 150px;
+	margin-top: -10px;
+}
+
+
+
+/*Comunity Banner*/
+.info-banner{
+	/*height: 100px;*/
+	width: 100%;
+	background-color: rgb(41, 65 , 107);
+}
+.info-banner-msg{
+	text-align: center;
+	font-size: 2em;
+
+}
+
+/* Landing Wrapper */
+.landing-wrapper {
+	background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .3)), url('../images/fotohome.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+    min-height: 450px;
+    padding: 50px 0;
+}
+
+.save-transfer-info{
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+	height: 450px;
+}
+
+.save-transfer-wrapper{
+	position:absolute;                  /* added */
+   	bottom:0;                           /* added */
+   	left:0;
+}
+
+.no-commision{
+	font-size: 2.5em;
+}
+
+
+.reasons-info{
+	margin-top: 100px;
+	color: #fff;
+	text-align: center
+}
+
+
+
+.reasons-info ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+}
+
+.reasons-info ul li {
+	background: url("../images/checked.png") no-repeat left top;
+	width: 20px;
+	padding-left: 20px;
+	padding-top: 3px;
+	display: inline;
+}
+
+.reasons-info ul div {
+	margin-top: 20px;
+	text-align: center;
+}
+
+
+
+.reasons-info ul span{
+	font-size: 1.5em;
+	color: #fff;
+}
+
+.landing-signin-btn{
+	background-color: rgb(59, 89, 152) !important;
+  	border-radius: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
