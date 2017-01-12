@@ -25,7 +25,7 @@
 
 /* Landing Wrapper */
 .landing-wrapper {
-	background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .3)), url('../images/fotohome.jpg') ;
+	background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)), url('../images/bgl.jpg') ;
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center center; 
@@ -75,10 +75,9 @@
 }
 
 .reasons-info ul div {
-	margin-top: 20px;
+	margin-top: 25px;
 	text-align: center;
 }
-
 
 
 .reasons-info ul span{
@@ -89,12 +88,27 @@
 .landing-signin-btn{
 	background-color: rgb(59, 89, 152) !important;
   	border-radius: 0 !important;
+  	margin-top: 35px;
 }
 
+/* Calculator */
 
+.calculator-section {
+	background-color: rgb( 42 , 75, 107 );
+}
 
+#txtCalculatorAmountLanding, #txtCalculatorAmountLanding:focus {
+    border: none;
+    padding: 0;
+    outline: none;
+ }
 
-
+.calculator-signin-btn{
+	background-color: rgb(59, 89, 152) !important;
+  	border-radius: 0 !important;
+  	margin-top: 35px;
+}
+    
 
 
 

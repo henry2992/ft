@@ -1,24 +1,14 @@
 // Add opacity class to site header
 	$( document ).on('scroll', function(){
 
-		
-
-
 		if ( $( document ).scrollTop() > 0 ){
 			$( '.ft-navbar' ).addClass( 'ft-navbar-down ' );	
             $( '.logo').addClass( 'logo-down ' );		
-
-
 		} else {
 
 			$( '.ft-navbar' ).removeClass( 'ft-navbar-down' );	
             $( '.logo').removeClass('logo-down ' );   
-
-
 		}
-
-					
-
 	});
 
 
@@ -29,19 +19,19 @@ $(document).ready(function () {
     calcularSaving();
 
 
-              $(function(){
-                  $(".typed1").typed({
-                    strings: ["300  ^750", "500  ^750", "1000"],
-                    typeSpeed: 0,
-                  });
+    $(function(){
+        $(".typed1").typed({
+            strings: ["300  ^750", "500  ^750", "1000"],
+            typeSpeed: 0,
+        });
 
-                  $(".typed2").typed({
-                    strings: ["15.46  ^750", "19.31  ^750", "23.16"],
-                    typeSpeed: 0,
-                    showCursor: false
-                  });
+        $(".typed2").typed({
+            strings: ["15.46  ^750", "19.31  ^750", "23.16"],
+            typeSpeed: 0,
+            showCursor: false
+        });
 
-              });
+    });
 });
 
 function init() {
