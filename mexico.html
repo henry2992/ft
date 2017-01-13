@@ -84,18 +84,18 @@
                    
                 </div>
             </div>
-            <div class="col-sm-6 col-sm-offset-2 ">
-                <div class="reasons-info">
-                    <h1>Razones para estar en FriendlyTransfer</h1>
-                    <ul>
-                        <div><li></li><span>Ahorro de los Costos Bancarios</span></div>
-                        <div><li></li><span>Recibes tu dinero mucho más Rapido</span></div>
-                        <div><li></li><span>Conoces gente en algunos paises</span></div>
-                    </ul>
+            <div class="col-sm-6 col-sm-offset-2 center">
+                <div class="reasons-holder">
+                    <div class="reasons-info ft-mobile">
+                        <h1>Razones para estar en FriendlyTransfer</h1>
+                        <ul>
+                            <div><li></li><span>Ahorro de los Costos Bancarios</span></div>
+                            <div><li></li><span>Recibes tu dinero mucho más Rapido</span></div>
+                            <div><li></li><span>Conoces gente en algunos paises</span></div>
+                        </ul>
+                    </div>
                     <button type="button" class="btn btn-primary btn-lg landing-signin-btn">Sign In with Facebook</button>
-
                 </div>
-
             </div>
 
             
@@ -139,19 +139,19 @@
             <div class="row">
 
                 <div class="col-sm-4 white">
-                    <h1> Calcula tu Ahorro </h1>
-
+                    <h1 class="cal-save"> Calcula tu Ahorro </h1>
                 </div>
                 
                 <div class="col-sm-4 white center">
-                    <p>Si Envias</p>
+                    <p class="send-text">Si Envias</p>
                     <div>
                         <span class="white" style="font-size: 2em">$</span>
 
-                        <input autofocus="" type="text" id="txtCalculatorAmountLanding" class="typed1 transparent white" style="width: 72px; text-align: center; font-size: 2em;" onkeypress="this.style.width = ((this.value.length + 1) * 18) + 'px';" value="500" >
+                        <input autofocus="" type="text" id="txtCalculatorAmountLanding" class="typed1 transparent white" style="width: 72px; text-align: center; font-size: 2.5em;" onkeypress="this.style.width = ((this.value.length + 1) * 18) + 'px';" value="500" >
                     </div>
-                    <p>De USA a México</p>
-                    <p id="txtCalculatorResultLanding"></p>
+                    <p class="from-text">De USA a México</p>
+                    <p class="from-text">Ahorras:</p>
+                    <p class="cal-result"><span>$</span><span id="txtCalculatorResultLanding"></span></p>
                 </div>
 
                 <div class="col-sm-4 center">
@@ -167,25 +167,25 @@
     <div class="how-works ft-grey-bg">
         <div class="container">
             
-            <h1 class="ft-blue center ft-main-title">Estamos Cambiando radicalmente</h1>
-            <h2 class="ft-blue center ft-second-title">La forma en que se mueven dolares alrededor del mundo</h2>
+            <h1 class="ft-blue center landing-main-title ">Estamos Cambiando radicalmente</h1>
+            <h2 class="ft-blue center landing-second-title">La forma en que se mueven dolares alrededor del mundo</h2>
             <p class="center bold ft-dark-blue">Somos la primera comunidad de pagos internacionales basado en la confianza</p> 
             
             <div class="row">
                 <div class="col-md-4 center hw-wrapper">
                     <img src="images/register.png" >
-                    <h2 class="ft-blue center">REGISTER</h2>
-                    <p class="ft-grey">Register with Facebook to connect with your friends in FriendlyTransfer.</p>
+                    <h2 class="ft-blue center">REGISTRO</h2>
+                    <p class="ft-grey">Regístrate con Facebook, LinkedIn o Correo Electrónico para conectarte con tus amigos en FriendlyTransfer.</p>
                 </div>
                 <div class="col-md-4 center hw-wrapper">
                     <img src="images/propose.png" >
-                    <h2 class="ft-blue">Propose</h2>
-                    <p class="ft-grey">Set the amount and country where you want to send US$. Find friends who have the opposite need. Agree to pay each other locally.</p>
+                    <h2 class="ft-blue">HAZ UNA PROPUESTA</h2>
+                    <p class="ft-grey">Realiza una propuesta poniendo el país y el monto, y encuentra amigos que tienen la necesidad opuesta, llega a un acuerdo con ellos.</p>
                 </div>
                 <div class="col-md-4 center hw-wrapper">
                     <img src="images/exchange.png" >
-                    <h2 class="ft-blue center">SAVE</h2>
-                    <p class="ft-grey">Since no US$ move across borders, you and your friends save on international transfer fees and other transaction costs.</p>
+                    <h2 class="ft-blue center">AHORRA</h2>
+                    <p class="ft-grey">Dado que ningún dólar se mueve a travez de fronteras, tú y tus amigos ahorran en las tasas de transferencia internacional.</p>
                 </div>                    
             </div>
 
@@ -210,37 +210,28 @@
                 </div>
 
                 <div class="col-md-6">
-                    <h1 class="ft-blue center ft-main-title">Simple and Friendly</h1>
+                    <div>
+                      <h1 class="ft-blue center ft-main-title">Simple, Rápido, Amigable</h1>
+                      <!-- FAQ -->
+                      <div class="landing-faq">
+                          <button class="accordion">Section 1</button>
+                          <div class="panel">
+                            <p>Lorem ipsum...</p>
+                          </div>
 
-                    
-                    <!-- FAQ -->
-                    <div class="landing-faq">
+                          <button class="accordion">Section 2</button>
+                          <div class="panel">
+                            <p>Lorem ipsum...</p>
+                          </div>
 
-                        <button class="accordion">Section 1</button>
-                        <div class="panel">
-                          <p>Lorem ipsum...</p>
-                        </div>
-
-                        <button class="accordion">Section 2</button>
-                        <div class="panel">
-                          <p>Lorem ipsum...</p>
-                        </div>
-
-                        <button class="accordion">Section 3</button>
-                        <div class="panel">
-                          <p>Lorem ipsum...</p>
-                        </div>
-
-
+                          <button class="accordion">Section 3</button>
+                          <div class="panel">
+                            <p>Lorem ipsum...</p>
+                          </div>
+                      </div>
                     </div>
-
-
                 </div>
-
-               
-                
             </div>
-            
         </div>
     </div>
 
@@ -256,7 +247,7 @@
                 <li data-target = "#my_carousel" data-slide-to = "2"></li>
               </ol>
 
-              <h1 class="center ft-blue reviews-title ft-main-title">Success Stories from our Community</h1>
+              <h1 class="center ft-blue reviews-title ft-main-title">Historias de nuestra comunidad</h1>
 
               <div class="carousel-inner i ">
 

@@ -11,19 +11,21 @@
 
 
 
-/*Comunity Banner*/
+/***** Comunity Banner ***********/
+
 .info-banner{
 	/*height: 100px;*/
 	width: 100%;
 	background-color: rgb(41, 65 , 107);
 }
+
 .info-banner-msg{
 	text-align: center;
-	font-size: 2em;
-
+	font-size: 1.1em;
+  margin-top: 10px;
 }
 
-/* Landing Wrapper */
+/************ Landing Wrapper **************/
 .landing-wrapper {
 	background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)), url('../images/bgl.jpg') ;
     background-repeat: no-repeat;
@@ -37,13 +39,10 @@
 	color: white;
 	text-align: center;
 	font-size: 1.5em;
-	height: 450px;
 }
 
 .save-transfer-wrapper{
-	position:absolute;                  /* added */
-   	bottom:0;                           /* added */
-   	left:0;
+	position: relative;
 }
 
 .no-commision{
@@ -51,10 +50,14 @@
 }
 
 
-.reasons-info{
-	margin-top: 100px;
+.reasons-holder{
+	margin-top: 10px;
 	color: #fff;
 	text-align: center
+}
+
+.reasons-info{
+
 }
 
 
@@ -91,11 +94,30 @@
   	margin-top: 35px;
 }
 
-/* Calculator */
+/*********** Calculator ******************/
 
 .calculator-section {
 	background-color: rgb( 42 , 75, 107 );
+  padding: 30px 0;
 }
+
+.cal-save{
+  margin: 10px 0 !important;
+}
+
+.send-text{
+  font-size: 1.5em
+}
+
+.from-text {
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+
+.cal-result{
+  font-size: 3.5em;
+}
+
 
 #txtCalculatorAmountLanding, #txtCalculatorAmountLanding:focus {
     border: none;
@@ -105,12 +127,33 @@
 
 .calculator-signin-btn{
 	background-color: rgb(59, 89, 152) !important;
-  	border-radius: 0 !important;
-  	margin-top: 35px;
+  border-radius: 0 !important;
+  margin-top: 5px;
 }
+
+
+/******************* Como Funciona ********************/
+
+
+.landing-main-title {
+  font-size: 1.75em;
+  margin-bottom: 15px !important;
+}
+
+.landing-second-title {
+  font-size: 1.25em;
+  margin-bottom: 10px !important;
+}
+
+
+
+
+
+
+
     
 
-/* Accordion */
+/******************************* Accordion **********************************/
 
  /* Style the buttons that are used to open and close the accordion panel */
 button.accordion {
@@ -154,4 +197,68 @@ div.panel p{
 button.accordion.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+******************************************************************************/
+/******************************** Media Queries ******************************/
+/****************************************************************************/
+
+
+/* Smartphones  ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+
+font-size: 2em;
+}
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 768px)  {
+
+  /* Info Banner */
+  .info-banner-msg{
+    font-size: 2em;
+    margin-top: 10px;
+  }
+
+  .save-transfer-wrapper{
+    position:absolute;                  /* added */
+    bottom:0;                           /* added */
+    left:0;
+  }
+
+  .save-transfer-info{
+    height: 450px;
+  }
+
+  .reasons-holder{
+    margin-top: 100px;
+  }
+
+
+  /* Calculator */
+  .calculator-signin-btn{
+    margin-top: 35px;
+  }
+
+
+  /* COmo Funciona */
+  .landing-main-title{
+    font-size: 3em;
+  }
+  .landing-second-title {
+    font-size: 2em;
+  }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
 
