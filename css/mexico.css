@@ -9,6 +9,10 @@
 	margin-top: -10px;
 }
 
+.ft-landing-bg{
+	background-color: rgb( 42 , 75, 107 );
+}
+
 
 
 /***** Comunity Banner ***********/
@@ -142,11 +146,19 @@
 
 .landing-second-title {
   font-size: 1.25em;
-  margin-bottom: 10px !important;
+  margin-bottom: 15px !important;
 }
 
 
+/********************* FAQ ***********************/
 
+.faq-wrapper{
+	margin-top: 30px;
+}
+
+.faq-title{
+	margin-bottom: 15px !important
+}
 
 
 
@@ -240,6 +252,18 @@ font-size: 2em;
     margin-top: 35px;
   }
 
+  .calculator-section{
+  	height: 300px;
+  }
+
+  .cal-save{
+  	margin-top: 35% !important;
+  }
+
+  .calculator-signin-btn{
+  	  	margin-top: 35% !important;
+
+  }
 
   /* COmo Funciona */
   .landing-main-title{
@@ -253,7 +277,14 @@ font-size: 2em;
 
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
+	.cal-save{
+	  	margin-top: 25% !important;
+	  }
 
+	  .calculator-signin-btn{
+	  	  	margin-top: 25% !important;
+
+	  }
 }
 
 /* Large screens ----------- */
