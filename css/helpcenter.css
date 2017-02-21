@@ -1,0 +1,168 @@
+.ft-landing-logo{
+	width: 150px;
+	margin-top: -15px;
+}
+
+/********** Section 1 **********/
+
+.welcome-section {
+	padding: 50px 0;
+	border: 1px solid rgb(142, 142, 142);
+	height: 375px;
+}
+
+.welcome-section-content h1 {
+	font-size: 15px;
+	margin-top: 30px !important;
+}
+
+.welcome-section-content button {
+	margin-top: 35px;
+	text-align: center;
+}
+
+.welcome-section-content h2 {
+	margin-top: 35px !important;
+	font-size: 15px;
+}
+
+
+/*********** Section 1 / Why join ************/
+
+.hc-join-wrapper{
+	background-color: rgb(96, 177, 218);
+	text-align: center;
+	padding: 15px 10px;
+	color: white;
+	height: 300px;
+}
+
+.hc-join-wrapper h1{
+	font-size: 20px;
+}
+
+.hc-join-wrapper img {
+	width: 100px;
+}
+
+.hc-join-wrapper p {
+	text-align: justify;
+}
+
+.hc-join-now {
+	background-color: rgb( 56, 150, 203);
+	text-align: center;
+	padding: 15px 0px;
+	height: 75px;
+}
+
+.hc-join-now button {
+	padding: 10px 20px;
+}
+
+
+/************ Section 2 **************/
+
+/* What does FT */
+.section2-wrapper{
+	margin: 50px 0px;
+}
+
+
+.section2-title {
+	background-color: rgb( 42, 75, 107);
+	color: white;
+	text-align: center;
+	height: 50px;
+	font-size: 18px;
+}
+.section2-title h1{
+	padding-top: 5px !important
+}
+
+.section2-content {
+	border: 1px solid rgb(142, 142, 142);
+	height: 150px;
+	padding: 25px;
+	color: rgb( 142, 142, 142);
+	overflow-y: scroll;
+}
+
+/************ Section 3 ***************/
+
+.section3-wrapper {
+	/*padding: 0 0 0px 0;*/
+	border: 1px solid rgb(142, 142, 142);
+}
+
+.section3-title {
+	text-align: center;
+	color: white;
+	padding: 10px 0;
+}
+
+.section3-learn{
+	padding: 25px 0;
+	text-align: center;
+	background-color: rgb(246,246,246);
+}
+
+.section3-learn button{
+	padding: 10px 25px;
+
+}
+
+
+/************** Section 4 ****************/
+
+.section4-wrapper{
+	padding: 50px 0
+}
+
+.section4-title {
+	text-align: center;
+}
+
+.section4-title img {
+	width: 100%;
+}
+
+
+.section4-content{
+	padding: 10px;
+	border: 1px solid rgb(142, 142, 142);
+
+}
+
+.section4-content h2{
+	text-align: center;
+	margin: 10px 0 !important;
+}
+
+
+
+/**************** Section 5 *********************/
+.section5-wrapper {
+	padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
