@@ -8,7 +8,7 @@
 .welcome-section {
 	padding: 50px 0;
 	border: 1px solid rgb(142, 142, 142);
-	height: 375px;
+	margin-bottom: 30px;
 }
 
 .welcome-section-content h1 {
@@ -34,7 +34,6 @@
 	text-align: center;
 	padding: 15px 10px;
 	color: white;
-	height: 300px;
 }
 
 .hc-join-wrapper h1{
@@ -65,9 +64,12 @@
 
 /* What does FT */
 .section2-wrapper{
-	margin: 50px 0px;
+	margin: 0px 0 0px 0px;
 }
 
+.section2-holder {
+	margin-bottom: 25px;
+}
 
 .section2-title {
 	background-color: rgb( 42, 75, 107);
@@ -109,29 +111,36 @@
 
 .section3-learn button{
 	padding: 10px 25px;
-
 }
 
 
 /************** Section 4 ****************/
 
 .section4-wrapper{
-	padding: 50px 0
+	padding: 25px 0
+}
+
+.section4-holder{
+	margin-bottom: 25px;
 }
 
 .section4-title {
 	text-align: center;
+	padding: 0px 15px;
 }
 
 .section4-title img {
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 
 .section4-content{
-	padding: 10px;
 	border: 1px solid rgb(142, 142, 142);
+}
 
+.section4-content-wrapper{
+	padding: 10px;
 }
 
 .section4-content h2{
@@ -139,26 +148,122 @@
 	margin: 10px 0 !important;
 }
 
-
-
-/**************** Section 5 *********************/
-.section5-wrapper {
-	padding: 50px;
+.section4-footer {
+	padding: 20px 0;
+	text-align: center;
+	background-color: rgb(246,246,246);
 }
 
 
 
 
+/**************** Section 5 *********************/
+.section5-wrapper {
+	padding: 0 0 50px 0;
+}
+
+
+.section5-help{
+	color: white;
+	height: 250px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.section5-help h1 {
+	font-size: 50px !important;
+	padding-top: 45px !important;
+}
+
+.section5-help span {
+	font-size: 50px !important;
+	padding-top: 15px !important;
+}
+
+.section5-suggestions {
+	padding: 10px;
+	border: 1px solid rgb(142, 142, 142);
+	/*height: 250px;*/
+}
+
+.section5-suggestions span i {
+	margin: 0 auto;
+	display: block;
+	font-size: 35px;
+	color: #2cdc2c;
+	text-align: center;
+}
+
+.section5-suggestions ul {
+	padding: 0px !important;
+}
+
+.section5-suggestions ul li {
+	list-style: none;
+	margin: 10px 0;
+}
+
+.section5-suggestions ul li i {
+	color: #2cdc2c;
+}
+
+/************************************************************************************/
+/********************************* Media Queries ***********************************/
+/**********************************************************************************/
 
 
 
+/* Smartphones  ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 768px)  {
+
+}
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 980px)  {
 
 
 
+}
+	
+	
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+	/****** Section 1 *******/
+	.welcome-section {
+		height: 375px;
+	}
+
+	.hc-join-wrapper{
+		height: 300px;
+	}
+
+	.section4-content p {
+		height: 125px;
+		overflow-y: scroll;
+	}
+
+	.section5-suggestions {
+		height: 250px;
+	}
+
+	.section5-suggestions ul {
+		padding-left: 30px !important;
+	}
 
 
+}
 
-
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
 
 
 
